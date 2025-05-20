@@ -1,0 +1,115 @@
+{{ define "main" }}
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Where <span class="highlight">micro</span> <br>meets <span class="highlight">meaningful</span>
+            </h1>
+            <p class="hero-subtitle">
+                Experience micro.blog with a beautifully crafted native iOS app, featuring timeline browsing,
+                seamless posting, and thoughtful interactions.
+            </p>
+            <div class="hero-buttons">
+                <a href="#" class="app-store-button">
+                    <img src="/images/app-store-badge.svg" alt="Download on the App Store">
+                </a>
+                <a href="#features" class="text-button">See Features →</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="phone-container">
+                <div class="phone-mockup">
+                    <img src="/images/app-screenshot.png" alt="micro social app interface" class="phone-screen">
+                </div>
+            </div>
+            <!-- Floating elements -->
+            <div class="floating-element post-bubble">
+                <span class="emoji">↩️</span>
+                <span>Smart Replies</span>
+            </div>
+            <div class="floating-element photo-bubble">
+                <span class="emoji">📚</span>
+                <span>Book Recomendations</span>
+            </div>
+            <div class="floating-element timeline-bubble">
+                <span class="emoji">📲</span>
+                <span>Made for iOS</span>
+            </div>
+        </div>
+    </div>
+    <!-- Background shapes -->
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+</section>
+
+<section id="features" class="features">
+    <div class="container">
+        <h2 class="section-title">Why Choose micro social?</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <img src="/images/icons/native.svg" alt="Native Experience" class="feature-icon-img">
+                </div>
+                <h3>Native Experience</h3>
+                <p>Built in swift with smooth animations and intuitive gestures.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <img src="/images/icons/design.svg" alt="Beautiful Design" class="feature-icon-img">
+                </div>
+                <h3>Smart Features</h3>
+                <p>Replies, Threading and posting built around your needs.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <img src="/images/icons/social.svg" alt="Lightning Fast" class="feature-icon-img">
+                </div>
+                <h3>Be More Social</h3>
+                <p>Optimised for community interaction and posting</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <img src="/images/icons/brain.svg" alt="Privacy First" class="feature-icon-img">
+                </div>
+                <h3>Throughtful Design</h3>
+                <p>Designed to be simple and easy to use.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="latest-posts">
+    <div class="container">
+        <h2 class="section-title">Latest Updates</h2>
+        <div class="posts-grid">
+            {{ range first 5 (where .Site.RegularPages "Section" "blog") }}
+            <article class="post-card">
+                <a href="{{ .RelPermalink }}" class="post-card-link">
+                    <div class="post-content">
+                        <h3 class="post-title">{{ .Title }}</h3>
+                        <p class="post-excerpt">{{ .Summary | truncate 120 }}</p>
+                    </div>
+                </a>
+            </article>
+            {{ end }}
+            <a href="/blog" class="post-card view-all-card">
+                <div class="post-content">
+                    <h3 class="post-title">View All Posts</h3>
+                    <p class="post-excerpt">Explore our complete collection of articles, updates, and feature announcements.</p>
+                    <span class="view-all-arrow">→</span>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="cta" id="download">
+    <div class="container">
+        <h2>Ready to Transform Your Micro.blog Experience?</h2>
+        <p>Download micro social today and join thousands of satisfied users.</p>
+        <a href="#" class="app-store-button">
+            <img src="/images/app-store-badge.svg" alt="Download on the App Store">
+        </a>
+    </div>
+</section>
+{{ end }} 

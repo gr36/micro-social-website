@@ -1,0 +1,23 @@
+baseURL = 'https://microsocial.app/'
+languageCode = 'en-us'
+title = 'micro social - A Modern Micro.blog Client'
+
+[params]
+  description = "Experience Micro.blog like never before with micro social, a beautifully designed iOS app."
+  author = "micro social team"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Blog"
+    url = "/blog"
+    weight = 2
+
+[markup]
+  [markup.highlight]
+    style = "github"
+  [markup.goldmark.renderer]
+    unsafe = true

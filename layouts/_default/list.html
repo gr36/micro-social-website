@@ -1,0 +1,22 @@
+{{ define "main" }}
+<section class="blog-list">
+    <div class="container">
+        <h1>{{ .Title }}</h1>
+        <div class="post-grid">
+            {{ range .Pages }}
+            <article class="post-card">
+                {{ if .Params.image }}
+                <img src="{{ .Params.image }}" alt="{{ .Title }}">
+                {{ end }}
+                <div class="post-content">
+                    <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+                    <time>{{ .Date.Format "January 2, 2006" }}</time>
+                    <p>{{ .Summary }}</p>
+                    <a href="{{ .RelPermalink }}" class="read-more">Read More →</a>
+                </div>
+            </article>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }} 

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ if .IsHome }}micro social - The elegant micro.blog experience for iOS{{ else }}{{ .Title }} - micro social{{ end }}</title>
+    <meta name="description" content="Experience micro.blog like never before with micro social, a beautifully designed iOS app.">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="container">
+            <a href="/" class="logo">micro social</a>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="#features">Features</a>
+                <a href="/blog">Blog</a>
+                <a href="#" class="primary-button">Download Now</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        {{ block "main" . }}{{ end }}
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; {{ now.Format "2006" }} micro social. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html> 

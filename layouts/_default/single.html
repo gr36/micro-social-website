@@ -1,0 +1,40 @@
+{{ define "main" }}
+<article class="blog-post">
+    <div class="container">
+        <header class="post-header">
+            <h1>{{ .Title }}</h1>
+            <time>{{ .Date.Format "January 2, 2006" }}</time>
+        </header>
+        
+        {{ if .Params.image }}
+        <div class="post-image">
+            <img src="{{ .Params.image }}" alt="{{ .Title }}">
+        </div>
+        {{ end }}
+        
+        <div class="post-content">
+            {{ .Content }}
+        </div>
+        
+        <footer class="post-footer">
+            {{ with .Params.tags }}
+            <div class="post-tags">
+                {{ range . }}
+                <a href="/tags/{{ . | urlize }}" class="tag">#{{ . }}</a>
+                {{ end }}
+            </div>
+            {{ end }}
+            
+            <div class="post-nav">
+                {{ with .PrevInSection }}
+                <a href="{{ .RelPermalink }}" class="prev">← {{ .Title }}</a>
+                {{ end }}
+                
+                {{ with .NextInSection }}
+                <a href="{{ .RelPermalink }}" class="next">{{ .Title }} →</a>
+                {{ end }}
+            </div>
+        </footer>
+    </div>
+</article>
+{{ end }} 
