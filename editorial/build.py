@@ -22,10 +22,10 @@ FEED = ROOT / "feed.json"
 
 FRONT = re.compile(r"^---\s*\n(.*?)\n---\s*\n?(.*)$", re.S)
 
-# Artwork lives in static/images/issues/ and is served raw from GitHub.
-# A short name like "issues/2026-09-05.jpg" or "2026-09-05.jpg" becomes
-# the full address; a full https:// address is left alone.
-RAW_IMAGES = "https://raw.githubusercontent.com/gr36/micro-social-website/main/static/images/"
+# Covers live in editorial/covers/ next to the editions and are served raw
+# from GitHub. A file name like "2026-09-05-cover.jpg" becomes the full
+# address; a full https:// address is left alone.
+RAW_COVERS = "https://raw.githubusercontent.com/gr36/micro-social-website/main/editorial/covers/"
 
 
 def artwork_url(value):
@@ -34,14 +34,7 @@ def artwork_url(value):
     value = str(value).strip()
     if value.startswith("http://") or value.startswith("https://"):
         return value
-    value = value.lstrip("/")
-    if value.startswith("static/images/"):
-        value = value[len("static/images/"):]
-    elif value.startswith("images/"):
-        value = value[len("images/"):]
-    elif "/" not in value:
-        value = "issues/" + value
-    return RAW_IMAGES + value
+    return RAW_COVERS + value.rsplit("/", 1)[-1]
 
 
 def fail(message):

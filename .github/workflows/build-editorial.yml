@@ -5,7 +5,7 @@ on:
     branches: [main]
     paths:
       - "editorial/issues/**"
-      - "static/images/issues/**"
+      - "editorial/covers/**"
       - "editorial/build.py"
       - "editorial/validate.py"
   workflow_dispatch:

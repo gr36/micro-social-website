@@ -5,7 +5,7 @@
 
 title: Slow reads and a new challenge
 date: 2026-09-12
-# The cover: a jpg in static/images/issues/, 1200×675, no text on it.
+# The cover: a jpg in editorial/covers/, 1200×675, no text on it.
 artwork: 2026-09-12-cover.jpg
 summary: One line shown under the title.
 

@@ -1,7 +1,7 @@
 # Micro Wrapped
 
 One Markdown file per edition in `issues/`, named for the Saturday it goes live
-(`2026-09-12.md`), with its cover in `static/images/issues/` (`2026-09-12-cover.jpg`,
+(`2026-09-12.md`), with its cover in `covers/` (`2026-09-12-cover.jpg`,
 1200×675, no text). Copy `TEMPLATE.md` to start, or paste the outline the
 [desk](https://github.com/gr36/micro-wrapped-desk) puts on your clipboard.
 
