@@ -1,44 +1,96 @@
 {
   "version": 1,
-  "updated": "2026-09-04T12:07:26Z",
+  "updated": "2026-09-04T12:20:10Z",
   "people": [
     {
+      "username": "endonend",
+      "name": "endonend",
+      "reason": "Posting about music this week"
+    },
+    {
+      "username": "MereCivilian",
+      "name": "MereCivilian",
+      "reason": "Posting about tv this week"
+    },
+    {
+      "username": "rom",
+      "name": "rom",
+      "reason": "Posting about movies, tv this week"
+    },
+    {
+      "username": "KimberlyHirsh",
+      "name": "KimberlyHirsh",
+      "reason": "Posting about books this week"
+    },
+    {
+      "username": "josh_____d",
+      "name": "josh_____d",
+      "reason": "Posting about books, movies, music this week"
+    },
+    {
+      "username": "agilelisa",
+      "name": "agilelisa",
+      "reason": "Posting about books this week"
+    },
+    {
+      "username": "jekratz",
+      "name": "jekratz",
+      "reason": "Posting about books, movies this week"
+    },
+    {
       "username": "manton",
-      "name": "Manton Reece",
-      "reason": "Creator of Micro.blog"
-    },
-    {
-      "username": "BonnieRue",
-      "name": "Bonnie Rue",
-      "reason": "Community Manager"
-    },
-    {
-      "username": "news",
-      "name": "Micro.blog News",
-      "reason": "Platform updates and news"
-    },
-    {
-      "username": "help",
-      "name": "Micro.blog Help",
-      "reason": "Platform support"
+      "name": "manton",
+      "reason": "Posting about movies, music, tv this week"
     }
   ],
   "books": [
     {
-      "isbn": "9780593321201",
-      "title": "Tomorrow, and Tomorrow, and Tomorrow",
-      "authors": [
-        "Gabrielle Zevin"
-      ],
-      "reason": "Read by a lot of people on Micro.blog this month"
+      "isbn": "9780486424491",
+      "title": "Jane Eyre",
+      "cover": "https://micro.blog/books/9780486424491/cover.jpg",
+      "reason": "Mentioned by 2 people this week"
     },
     {
-      "isbn": "9781529032420",
-      "title": "Small Things Like These",
-      "authors": [
-        "Claire Keegan"
-      ],
-      "reason": "A short one for a weekend"
+      "isbn": "9781786581426",
+      "title": "Late Light",
+      "cover": "https://micro.blog/books/9781786581426/cover.jpg",
+      "reason": "Mentioned by 1 person this week"
+    },
+    {
+      "isbn": "9780008711481",
+      "title": "The Laws of Thought",
+      "cover": "https://micro.blog/books/9780008711481/cover.jpg",
+      "reason": "Mentioned by 2 people this week"
+    },
+    {
+      "isbn": "9780671655747",
+      "title": "Shards of Honor",
+      "cover": "https://micro.blog/books/9780671655747/cover.jpg",
+      "reason": "Mentioned by 1 person this week"
+    },
+    {
+      "isbn": "9781514002254",
+      "title": "To Live Well",
+      "cover": "https://micro.blog/books/9781514002254/cover.jpg",
+      "reason": "Mentioned by 1 person this week"
+    },
+    {
+      "isbn": "9780830821907",
+      "title": "Ephesians",
+      "cover": "https://micro.blog/books/9780830821907/cover.jpg",
+      "reason": "Mentioned by 1 person this week"
+    },
+    {
+      "isbn": "9780553803716",
+      "title": "Foundation (Foundation, #1)",
+      "cover": "https://micro.blog/books/9780553803716/cover.jpg",
+      "reason": "Mentioned by 2 people this week"
+    },
+    {
+      "isbn": "9798217154746",
+      "title": "The Things We Never Say: A Novel",
+      "cover": "https://micro.blog/books/9798217154746/cover.jpg",
+      "reason": "Mentioned by 1 person this week"
     }
   ],
   "events": [
@@ -57,16 +109,36 @@
   "activity": {
     "watching": [
       {
-        "title": "Slow Horses",
-        "subtitle": "Apple TV+"
+        "title": "The Dog Stars",
+        "subtitle": "Themoviedb"
       },
       {
-        "title": "The Bear",
-        "subtitle": "Disney+"
+        "title": "Vigil [2021] S3E2",
+        "subtitle": "Themoviedb"
       },
       {
-        "title": "Severance",
-        "subtitle": "Apple TV+"
+        "title": "Trigger Point [2022] S4E1",
+        "subtitle": "Themoviedb"
+      },
+      {
+        "title": "Rental Family",
+        "subtitle": "Themoviedb"
+      },
+      {
+        "title": "The Movie Database",
+        "subtitle": "Themoviedb"
+      },
+      {
+        "title": "Spider-Man: Brand New Day",
+        "subtitle": "Themoviedb"
+      },
+      {
+        "title": "Terminator 2: Judgment Day",
+        "subtitle": "Themoviedb"
+      },
+      {
+        "title": "Ghost in the Shell",
+        "subtitle": "Themoviedb"
       }
     ],
     "playing": [
@@ -82,12 +154,36 @@
     ],
     "listening": [
       {
-        "title": "Core Intuition",
-        "subtitle": "Podcast"
+        "title": "North Meets West Trio",
+        "subtitle": "Album"
       },
       {
-        "title": "Micro Monday",
-        "subtitle": "Podcast"
+        "title": "here",
+        "subtitle": "Boysnoize"
+      },
+      {
+        "title": "new one",
+        "subtitle": "R4Ggs"
+      },
+      {
+        "title": "You Pt. 2",
+        "subtitle": "Open"
+      },
+      {
+        "title": "Your New Place",
+        "subtitle": "Open"
+      },
+      {
+        "title": "Racing Mount Pleasant",
+        "subtitle": "Open"
+      },
+      {
+        "title": "Call It Easy",
+        "subtitle": "Open"
+      },
+      {
+        "title": "Way Out - stevestevesteve",
+        "subtitle": "Open"
       }
     ]
   }
