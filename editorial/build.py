@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""Builds editorial/feed.json from the weekly issues in editorial/issues/.
+"""Builds editorial/feed.json from the Micro Wrapped editions in editorial/issues/.
 
-Each issue is one Markdown file named YYYY-MM-DD.md: YAML front matter for
-the picks, Markdown below it for the editorial note. The newest issue whose
-date has arrived also fills the top-level people, books, events and
-activity sections, so every screen in the app reads from the same week.
+Each edition is one Markdown file named YYYY-MM-DD.md, dated the day it goes
+live: YAML front matter for the picks, Markdown below it for the note. An
+edition can be written and committed early; the app hides it until its date.
+The newest edition whose date has arrived also fills the top-level people,
+books, events and activity sections, so every screen reads from the same one.
 A ready-to-paste newsletter post is written to editorial/newsletter/.
 
 Run: python3 editorial/build.py
@@ -40,8 +41,6 @@ def read_issue(path):
         issue_date = issue_date.date()
     if not isinstance(issue_date, date):
         fail(f"{path.name}: 'date' must be a date like 2026-09-08")
-    if issue_date.weekday() != 0:
-        print(f"note: {path.name} is dated a {issue_date.strftime('%A')}, not a Monday")
     if not meta.get("title"):
         fail(f"{path.name}: 'title' is required")
 
