@@ -57,6 +57,7 @@ SECTION_HEADINGS = {
     "people": "people", "follow": "people", "worth a follow": "people", "who to follow": "people",
     "watching": "watching", "playing": "playing", "listening": "listening",
     "tip": "tip", "did you know": "tip",
+    "sign-off": "signoff", "signoff": "signoff", "sign off": "signoff",
     "games": "playing",
 }
 
@@ -68,7 +69,7 @@ def split_body(text):
         if heading:
             key = SECTION_HEADINGS.get(heading.group(1).strip().lower().rstrip("?"))
             if key is None:
-                fail(f"unknown section heading '## {heading.group(1)}' (use Links, Books, People, Watching, Playing, Listening or Tip)")
+                fail(f"unknown section heading '## {heading.group(1)}' (use Links, Books, Watching, Playing, Listening, Tip or Sign-off)")
             current = key
             notes.setdefault(current, [])
             continue
