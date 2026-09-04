@@ -189,15 +189,6 @@ def newsletter(issue):
             line = f"- {name}" + (f" by {authors}" if authors else "") + (f". {b['reason']}" if b.get("reason") else "")
             lines.append(line)
         lines.append("")
-    if issue["people"]:
-        lines += ["## Worth a follow", ""]
-        if notes.get("people"):
-            lines += [notes["people"], ""]
-        for p in issue["people"]:
-            name = p.get("name") or p["username"]
-            line = f"- [{name}](https://micro.blog/{p['username']}) (@{p['username']})" + (f". {p['reason']}" if p.get("reason") else "")
-            lines.append(line)
-        lines.append("")
     for key, label in (("watching", "Watching"), ("playing", "Playing"), ("listening", "Listening")):
         picks = issue["activity"].get(key) or []
         if picks:

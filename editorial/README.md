@@ -20,7 +20,7 @@ books:
 people:
   - username: manton
     name: Manton Reece
-    reason: Creator of Micro.blog
+    reason: Creator of Micro.blog   # shown in Find People, not in the edition
 reads:
   - title: An article worth reading
     url: https://example.com/article
@@ -46,7 +46,7 @@ Your letter, in Markdown. Links like [this](https://micro.blog) are tappable in 
 
 ## Books
 
-A line or two shown under the Books header, above the books. Use "## Links", "## Books", "## People", "## Watching", "## Playing", "## Listening" or "## Tip" to put text under any section; leave a heading out and that section has none.
+A line or two shown under the Books header, above the books. Use "## Links", "## Books", "## Watching", "## Playing", "## Listening" or "## Tip" to put text under any section; leave a heading out and that section has none.
 ```
 
 Every section is optional. Artwork goes in `static/images/issues/` at 1200×675, imagery only with no text, since the app draws the date, title and summary over it. `artwork` is just its file name: the build turns it into the raw GitHub address, which is live the moment the commit lands on `main`. (A full `https://` address is used as given.) The app shows it on the Timeline card and as the cover of the edition. Without artwork the app uses its accent cover.
