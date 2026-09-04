@@ -42,7 +42,11 @@ tip:
   username: challenges
   glyph: trophy.fill
 ---
-Your note for the week, in Markdown. Links like [this](https://micro.blog) are tappable in the app, and paragraphs are kept.
+Your letter, in Markdown. Links like [this](https://micro.blog) are tappable in the app, and paragraphs are kept.
+
+## Books
+
+A line or two shown under the Books header, above the books. Use "## Links", "## Books", "## People", "## Watching", "## Playing", "## Listening" or "## Tip" to put text under any section; leave a heading out and that section has none.
 ```
 
 Every section is optional. Artwork goes in `static/images/issues/` at 1200×675, imagery only with no text, since the app draws the date, title and summary over it. `artwork` is just its file name: the build turns it into the raw GitHub address, which is live the moment the commit lands on `main`. (A full `https://` address is used as given.) The app shows it on the Timeline card and as the cover of the edition. Without artwork the app uses its accent cover.

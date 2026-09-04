@@ -50,13 +50,40 @@ def fail(message):
     sys.exit(1)
 
 
+# A "## Heading" in the note starts text for that section, shown under its
+# header in the app. Everything before the first heading is the letter.
+SECTION_HEADINGS = {
+    "links": "links", "interesting links": "links", "reading": "links", "worth reading": "links",
+    "books": "books",
+    "people": "people", "follow": "people", "worth a follow": "people", "who to follow": "people",
+    "watching": "watching", "playing": "playing", "listening": "listening",
+    "tip": "tip", "did you know": "tip",
+}
+
+
+def split_body(text):
+    letter, notes, current = [], {}, None
+    for line in text.splitlines():
+        heading = re.match(r"^##\s+(.+?)\s*$", line)
+        if heading:
+            key = SECTION_HEADINGS.get(heading.group(1).strip().lower().rstrip("?"))
+            if key is None:
+                fail(f"unknown section heading '## {heading.group(1)}' (use Links, Books, People, Watching, Playing, Listening or Tip)")
+            current = key
+            notes.setdefault(current, [])
+            continue
+        (notes[current] if current else letter).append(line)
+    cleaned = {k: "\n".join(v).strip() for k, v in notes.items()}
+    return "\n".join(letter).strip(), {k: v for k, v in cleaned.items() if v}
+
+
 def read_issue(path):
     text = path.read_text()
     match = FRONT.match(text)
     if not match:
         fail(f"{path.name}: needs YAML front matter between --- lines")
     meta = yaml.safe_load(match.group(1)) or {}
-    body = match.group(2).strip()
+    body, notes = split_body(match.group(2).strip())
     issue_date = meta.get("date")
     if isinstance(issue_date, datetime):
         issue_date = issue_date.date()
@@ -118,6 +145,7 @@ def read_issue(path):
         "summary": meta.get("summary"),
         "artwork": artwork_url(meta.get("artwork")),
         "body": body,
+        "notes": notes,
         "reads": reads(),
         "books": books(),
         "people": people(),
@@ -140,8 +168,11 @@ def newsletter(issue):
         lines += [issue["summary"], ""]
     if issue.get("body"):
         lines += [issue["body"], ""]
+    notes = issue.get("notes") or {}
     if issue.get("reads"):
         lines += ["## Interesting links", ""]
+        if notes.get("links"):
+            lines += [notes["links"], ""]
         for r in issue["reads"]:
             by = " · ".join(x for x in (r.get("source"), r.get("author")) if x)
             line = f"- [{r['title']}]({r['url']})" + (f" ({by})" if by else "") + (f". {r['blurb']}" if r.get("blurb") else "")
@@ -149,6 +180,8 @@ def newsletter(issue):
         lines.append("")
     if issue["books"]:
         lines += ["## Books", ""]
+        if notes.get("books"):
+            lines += [notes["books"], ""]
         for b in issue["books"]:
             authors = ", ".join(b["authors"]) if b["authors"] else ""
             link = f"https://micro.blog/books/{b['isbn']}" if b.get("isbn") else None
@@ -158,6 +191,8 @@ def newsletter(issue):
         lines.append("")
     if issue["people"]:
         lines += ["## Worth a follow", ""]
+        if notes.get("people"):
+            lines += [notes["people"], ""]
         for p in issue["people"]:
             name = p.get("name") or p["username"]
             line = f"- [{name}](https://micro.blog/{p['username']}) (@{p['username']})" + (f". {p['reason']}" if p.get("reason") else "")
