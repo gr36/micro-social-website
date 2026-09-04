@@ -165,8 +165,16 @@ def build_editorial():
         issue, issue_date = read_issue(path)
         issues.append((issue_date, issue))
     issues.sort(key=lambda pair: pair[0], reverse=True)
-    feed = {"version": 1, "updated": now_iso(), "issues": [issue for _, issue in issues[:8]]}
-    FEED.write_text(json.dumps(strip_none(feed), indent=2, ensure_ascii=False) + "\n")
+    feed = strip_none({"version": 1, "updated": now_iso(), "issues": [issue for _, issue in issues[:8]]})
+    # Only the editions decide whether the file changes: if they are the
+    # same as last time, keep the old timestamp so nothing is committed.
+    try:
+        previous = json.loads(FEED.read_text())
+        if previous.get("issues") == feed["issues"] and previous.get("updated"):
+            feed["updated"] = previous["updated"]
+    except (OSError, json.JSONDecodeError):
+        pass
+    FEED.write_text(json.dumps(feed, indent=2, ensure_ascii=False) + "\n")
     print(f"editorial/feed.json: {len(issues)} edition(s), newest {issues[0][1]['id']}")
 
 
