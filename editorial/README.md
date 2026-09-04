@@ -4,10 +4,7 @@ The weekly edition Plus members see once at the top of the Timeline and can reop
 
 ## The desk (the easy way)
 
-```
-pip3 install pyyaml pillow
-python3 editorial/desk.py
-```
+Double-click `editorial/Micro Wrapped Desk.command` in Finder. It installs the two Python packages it needs the first time, starts the desk and opens it in your browser. (Or `python3 editorial/desk.py` from Terminal.) The first double-click may need a right-click → Open, since macOS asks about scripts from outside the App Store.
 
 It opens a page at localhost:8765. The left side is material: your Micro.blog bookmarks (save a link anywhere during the week and it shows up there) and the recent Discover posts for books, TV, movies, music and podcasts, with the books people are posting about counted up by ISBN. The right side is the edition: title, date, artwork, the note, and the lists. Tick a bookmark to make it a link, tap a post to add it as a pick, write the note. **Save & build** writes the issue file, resizes the artwork and builds and validates the feed. **Publish** commits and pushes to main. The first run asks for your Micro.blog app token (Account → App tokens); it stays on the Mac.
 
