@@ -46,3 +46,4 @@ dist/
 build/ 
 # Micro Wrapped desk
 editorial/.desk-cache.json
+editorial/__pycache__/
