@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-09-04T06:00:00Z",
+  "updated": "2026-09-04T12:07:06Z",
   "people": [
     {
       "username": "manton",
@@ -21,11 +21,6 @@
       "username": "help",
       "name": "Micro.blog Help",
       "reason": "Platform support"
-    },
-    {
-      "username": "gregmorris",
-      "name": "Greg Morris",
-      "reason": "Developer of Micro Social"
     }
   ],
   "books": [
@@ -48,7 +43,7 @@
   ],
   "events": [
     {
-      "id": "challenges-account-2026-09",
+      "id": "challenges-2026-09",
       "label": "Did you know?",
       "title": "Micro.blog runs community challenges",
       "body": "Photo and writing prompts from @challenges",

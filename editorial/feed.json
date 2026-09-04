@@ -1,95 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-09-04T08:25:58Z",
-  "people": [
-    {
-      "username": "manton",
-      "name": "Manton Reece",
-      "reason": "Creator of Micro.blog"
-    },
-    {
-      "username": "BonnieRue",
-      "name": "Bonnie Rue",
-      "reason": "Community Manager"
-    },
-    {
-      "username": "news",
-      "name": "Micro.blog News",
-      "reason": "Platform updates and news"
-    },
-    {
-      "username": "help",
-      "name": "Micro.blog Help",
-      "reason": "Platform support"
-    }
-  ],
-  "books": [
-    {
-      "isbn": "9780593321201",
-      "title": "Tomorrow, and Tomorrow, and Tomorrow",
-      "authors": [
-        "Gabrielle Zevin"
-      ],
-      "reason": "Read by a lot of people on Micro.blog this month"
-    },
-    {
-      "isbn": "9781529032420",
-      "title": "Small Things Like These",
-      "authors": [
-        "Claire Keegan"
-      ],
-      "reason": "A short one for a weekend"
-    }
-  ],
-  "events": [
-    {
-      "id": "tip-2026-08-31",
-      "label": "Did you know?",
-      "title": "Micro.blog runs community challenges",
-      "body": "Photo and writing prompts from @challenges",
-      "username": "challenges",
-      "url": "https://micro.blog/challenges",
-      "glyph": "trophy.fill",
-      "starts": "2026-08-31T00:00:00Z"
-    }
-  ],
-  "activity": {
-    "watching": [
-      {
-        "title": "Slow Horses",
-        "subtitle": "Apple TV+"
-      },
-      {
-        "title": "The Bear",
-        "subtitle": "Disney+"
-      },
-      {
-        "title": "Severance",
-        "subtitle": "Apple TV+"
-      }
-    ],
-    "playing": [
-      {
-        "title": "Balatro"
-      },
-      {
-        "title": "Hades II"
-      },
-      {
-        "title": "Stardew Valley"
-      }
-    ],
-    "listening": [
-      {
-        "title": "Core Intuition",
-        "subtitle": "Podcast"
-      },
-      {
-        "title": "Micro Monday",
-        "subtitle": "Podcast"
-      }
-    ]
-  },
+  "updated": "2026-09-04T12:07:06Z",
   "issues": [
     {
       "id": "2026-08-31",
@@ -104,26 +15,7 @@
         "watching": "Three shows people kept posting about this week. Tap one and the app searches for it so you can say what you're watching.",
         "tip": "The photo challenge is back. The prompts come from [@challenges](https://micro.blog/challenges), one a day, and you take part by posting a photo with the day's tag. It's the easiest way to meet people here. See you next week."
       },
-      "reads": [
-        {
-          "title": "Micro.blog and the open web",
-          "url": "https://micro.blog/about/community",
-          "source": "Micro.blog",
-          "blurb": "The community guidelines, and why the timeline has no likes, no follower counts and no algorithm."
-        },
-        {
-          "title": "How to run a photo challenge",
-          "url": "https://micro.blog/challenges",
-          "source": "@challenges",
-          "blurb": "Where the daily prompts come from, how to take part, and how the tag works."
-        },
-        {
-          "title": "Bookshelves on Micro.blog",
-          "url": "https://help.micro.blog/t/bookshelves/234",
-          "source": "Help Center",
-          "blurb": "Shelves, goals, and how the reading pages on your blog are built from them."
-        }
-      ],
+      "reads": [],
       "books": [
         {
           "isbn": "9780593321201",
@@ -140,28 +32,6 @@
             "Claire Keegan"
           ],
           "reason": "A short one for a weekend"
-        }
-      ],
-      "people": [
-        {
-          "username": "manton",
-          "name": "Manton Reece",
-          "reason": "Creator of Micro.blog"
-        },
-        {
-          "username": "BonnieRue",
-          "name": "Bonnie Rue",
-          "reason": "Community Manager"
-        },
-        {
-          "username": "news",
-          "name": "Micro.blog News",
-          "reason": "Platform updates and news"
-        },
-        {
-          "username": "help",
-          "name": "Micro.blog Help",
-          "reason": "Platform support"
         }
       ],
       "activity": {
@@ -212,5 +82,95 @@
         "starts": "2026-08-31T00:00:00Z"
       }
     }
-  ]
+  ],
+  "people": [
+    {
+      "username": "manton",
+      "name": "Manton Reece",
+      "reason": "Creator of Micro.blog"
+    },
+    {
+      "username": "BonnieRue",
+      "name": "Bonnie Rue",
+      "reason": "Community Manager"
+    },
+    {
+      "username": "news",
+      "name": "Micro.blog News",
+      "reason": "Platform updates and news"
+    },
+    {
+      "username": "help",
+      "name": "Micro.blog Help",
+      "reason": "Platform support"
+    }
+  ],
+  "books": [
+    {
+      "isbn": "9780593321201",
+      "title": "Tomorrow, and Tomorrow, and Tomorrow",
+      "authors": [
+        "Gabrielle Zevin"
+      ],
+      "reason": "Read by a lot of people on Micro.blog this month"
+    },
+    {
+      "isbn": "9781529032420",
+      "title": "Small Things Like These",
+      "authors": [
+        "Claire Keegan"
+      ],
+      "reason": "A short one for a weekend"
+    }
+  ],
+  "events": [
+    {
+      "id": "challenges-2026-09",
+      "label": "Did you know?",
+      "title": "Micro.blog runs community challenges",
+      "body": "Photo and writing prompts from @challenges",
+      "username": "challenges",
+      "url": "https://micro.blog/challenges",
+      "glyph": "trophy.fill",
+      "starts": "2026-09-01T00:00:00Z",
+      "ends": "2026-12-31T23:59:59Z"
+    }
+  ],
+  "activity": {
+    "watching": [
+      {
+        "title": "Slow Horses",
+        "subtitle": "Apple TV+"
+      },
+      {
+        "title": "The Bear",
+        "subtitle": "Disney+"
+      },
+      {
+        "title": "Severance",
+        "subtitle": "Apple TV+"
+      }
+    ],
+    "playing": [
+      {
+        "title": "Balatro"
+      },
+      {
+        "title": "Hades II"
+      },
+      {
+        "title": "Stardew Valley"
+      }
+    ],
+    "listening": [
+      {
+        "title": "Core Intuition",
+        "subtitle": "Podcast"
+      },
+      {
+        "title": "Micro Monday",
+        "subtitle": "Podcast"
+      }
+    ]
+  }
 }
