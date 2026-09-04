@@ -14,7 +14,8 @@ from urllib.request import Request, urlopen
 
 HERE = Path(__file__).resolve().parent
 FEED = HERE / "feed.json"
-COLLECTIONS = ["books", "tv", "movies", "music", "podcasts"]
+COLLECTIONS = ["books", "tv", "movies", "music", "podcasts", "videogames"]
+TOPIC_LABELS = {"tv": "TV", "videogames": "games"}
 TAGS = re.compile(r"<[^>]+>")
 LINK = re.compile(r'<a\s[^>]*?href="([^"]+)"[^>]*>(.*?)</a>', re.S | re.I)
 BOOK_LINK = re.compile(r'<a\s[^>]*?href="[^"]*micro\.blog/books/(\d{10,13})"[^>]*>(.*?)</a>', re.S | re.I)
@@ -102,7 +103,7 @@ def main():
         kept = [x for x in old or [] if x.get(key) not in seen and str(x.get("username", "")).lower() not in EXCLUDE]
         return (new + kept)[:LIMIT]
 
-    fresh_people = [{"username": p["username"], "name": p["username"], "reason": "Posting about " + ", ".join(sorted(p["topics"])) + " this week"} for p in top(people.values())]
+    fresh_people = [{"username": p["username"], "name": p["username"], "reason": "Posting about " + ", ".join(TOPIC_LABELS.get(t, t) for t in sorted(p["topics"])) + " this week"} for p in top(people.values())]
     fresh_books = [{"isbn": b["isbn"], "title": b["title"], "cover": f"https://micro.blog/books/{b['isbn']}/cover.jpg", "reason": f"Mentioned by {len(b['by'])} {'person' if len(b['by']) == 1 else 'people'} this week"} for b in top(books.values())]
     old_activity = existing.get("activity") or {}
     feed = {
