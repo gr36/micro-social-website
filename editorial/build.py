@@ -141,7 +141,7 @@ def newsletter(issue):
     if issue.get("body"):
         lines += [issue["body"], ""]
     if issue.get("reads"):
-        lines += ["## Worth reading", ""]
+        lines += ["## Interesting links", ""]
         for r in issue["reads"]:
             by = " · ".join(x for x in (r.get("source"), r.get("author")) if x)
             line = f"- [{r['title']}]({r['url']})" + (f" ({by})" if by else "") + (f". {r['blurb']}" if r.get("blurb") else "")
