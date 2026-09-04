@@ -59,10 +59,16 @@ if "updated" in feed:
 check_list(feed, "people", person)
 check_list(feed, "books", book)
 check_list(feed, "events", event)
+def read(item, where):
+    for key in ("title", "url"):
+        expect(isinstance(item.get(key), str) and item[key], f"{where}: '{key}' is required")
+    expect(item["url"].startswith("http"), f"{where}: 'url' must be a full address")
+
 def issue(item, where):
     for key in ("id", "title", "date"):
         expect(isinstance(item.get(key), str) and item[key], f"{where}: '{key}' is required")
     iso(item["date"], f"{where}.date")
+    check_list(item, "reads", read)
     check_list(item, "books", book)
     check_list(item, "people", person)
     if item.get("tip") is not None:

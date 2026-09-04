@@ -21,6 +21,12 @@ people:
   - username: manton
     name: Manton Reece
     reason: Creator of Micro.blog
+reads:
+  - title: An article worth reading
+    url: https://example.com/article
+    source: Where it's from
+    author: Who wrote it
+    blurb: One or two lines on why it's worth their time.
 watching:
   - title: Slow Horses
     subtitle: Apple TV+
@@ -36,7 +42,7 @@ tip:
   username: challenges
   glyph: trophy.fill
 ---
-Your note for the week, in Markdown.
+Your note for the week, in Markdown. Links like [this](https://micro.blog) are tappable in the app, and paragraphs are kept.
 ```
 
 Every section is optional. Artwork goes in `static/images/issues/` at 1200×675, imagery only with no text, since the app draws the date, title and summary over it. `artwork` is just its file name: the build turns it into the raw GitHub address, which is live the moment the commit lands on `main`. (A full `https://` address is used as given.) The app shows it on the Timeline card and as the cover of the edition. Without artwork the app uses its accent cover.

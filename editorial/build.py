@@ -85,6 +85,18 @@ def read_issue(path):
         return [{"username": p["username"], "name": p.get("name"), "reason": p.get("reason")}
                 for p in meta.get("people") or []]
 
+    def reads():
+        out = []
+        for r in meta.get("reads") or []:
+            out.append({
+                "title": r["title"],
+                "url": r["url"],
+                "source": r.get("source"),
+                "author": r.get("author"),
+                "blurb": r.get("blurb"),
+            })
+        return out
+
     tip = meta.get("tip")
     event = None
     if tip:
@@ -106,6 +118,7 @@ def read_issue(path):
         "summary": meta.get("summary"),
         "artwork": artwork_url(meta.get("artwork")),
         "body": body,
+        "reads": reads(),
         "books": books(),
         "people": people(),
         "activity": {"watching": picks("watching"), "playing": picks("playing"), "listening": picks("listening")},
@@ -127,6 +140,13 @@ def newsletter(issue):
         lines += [issue["summary"], ""]
     if issue.get("body"):
         lines += [issue["body"], ""]
+    if issue.get("reads"):
+        lines += ["## Worth reading", ""]
+        for r in issue["reads"]:
+            by = " · ".join(x for x in (r.get("source"), r.get("author")) if x)
+            line = f"- [{r['title']}]({r['url']})" + (f" ({by})" if by else "") + (f". {r['blurb']}" if r.get("blurb") else "")
+            lines.append(line)
+        lines.append("")
     if issue["books"]:
         lines += ["## Books", ""]
         for b in issue["books"]:
