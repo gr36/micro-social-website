@@ -1,0 +1,200 @@
+{
+  "version": 1,
+  "updated": "2026-09-04T07:18:11Z",
+  "people": [
+    {
+      "username": "manton",
+      "name": "Manton Reece",
+      "reason": "Creator of Micro.blog"
+    },
+    {
+      "username": "BonnieRue",
+      "name": "Bonnie Rue",
+      "reason": "Community Manager"
+    },
+    {
+      "username": "news",
+      "name": "Micro.blog News",
+      "reason": "Platform updates and news"
+    },
+    {
+      "username": "help",
+      "name": "Micro.blog Help",
+      "reason": "Platform support"
+    },
+    {
+      "username": "gregmorris",
+      "name": "Greg Morris",
+      "reason": "Developer of Micro Social"
+    }
+  ],
+  "books": [
+    {
+      "isbn": "9780593321201",
+      "title": "Tomorrow, and Tomorrow, and Tomorrow",
+      "authors": [
+        "Gabrielle Zevin"
+      ],
+      "reason": "Read by a lot of people on Micro.blog this month"
+    },
+    {
+      "isbn": "9781529032420",
+      "title": "Small Things Like These",
+      "authors": [
+        "Claire Keegan"
+      ],
+      "reason": "A short one for a weekend"
+    }
+  ],
+  "events": [
+    {
+      "id": "tip-2026-08-31",
+      "label": "Did you know?",
+      "title": "Micro.blog runs community challenges",
+      "body": "Photo and writing prompts from @challenges",
+      "username": "challenges",
+      "url": "https://micro.blog/challenges",
+      "glyph": "trophy.fill",
+      "starts": "2026-08-31T00:00:00Z"
+    }
+  ],
+  "activity": {
+    "watching": [
+      {
+        "title": "Slow Horses",
+        "subtitle": "Apple TV+"
+      },
+      {
+        "title": "The Bear",
+        "subtitle": "Disney+"
+      },
+      {
+        "title": "Severance",
+        "subtitle": "Apple TV+"
+      }
+    ],
+    "playing": [
+      {
+        "title": "Balatro"
+      },
+      {
+        "title": "Hades II"
+      },
+      {
+        "title": "Stardew Valley"
+      }
+    ],
+    "listening": [
+      {
+        "title": "Core Intuition",
+        "subtitle": "Podcast"
+      },
+      {
+        "title": "Micro Monday",
+        "subtitle": "Podcast"
+      }
+    ]
+  },
+  "issues": [
+    {
+      "id": "2026-08-31",
+      "date": "2026-08-31T00:00:00Z",
+      "title": "Slow reads and a new challenge",
+      "summary": "Two books people can't put down, five accounts worth a follow, and the September photo challenge.",
+      "artwork": "https://microsocial.app/images/issues/2026-08-31.jpg",
+      "body": "September is a reading month on Micro.blog. Two novels keep coming up in the books timeline, one long and one you can finish in an evening, and the photo challenge is back with a new prompt every day.\n\nIf you're new here, the five accounts below are the ones to follow first. They'll tell you what's changing on the platform before anyone else does.",
+      "books": [
+        {
+          "isbn": "9780593321201",
+          "title": "Tomorrow, and Tomorrow, and Tomorrow",
+          "authors": [
+            "Gabrielle Zevin"
+          ],
+          "reason": "Read by a lot of people on Micro.blog this month"
+        },
+        {
+          "isbn": "9781529032420",
+          "title": "Small Things Like These",
+          "authors": [
+            "Claire Keegan"
+          ],
+          "reason": "A short one for a weekend"
+        }
+      ],
+      "people": [
+        {
+          "username": "manton",
+          "name": "Manton Reece",
+          "reason": "Creator of Micro.blog"
+        },
+        {
+          "username": "BonnieRue",
+          "name": "Bonnie Rue",
+          "reason": "Community Manager"
+        },
+        {
+          "username": "news",
+          "name": "Micro.blog News",
+          "reason": "Platform updates and news"
+        },
+        {
+          "username": "help",
+          "name": "Micro.blog Help",
+          "reason": "Platform support"
+        },
+        {
+          "username": "gregmorris",
+          "name": "Greg Morris",
+          "reason": "Developer of Micro Social"
+        }
+      ],
+      "activity": {
+        "watching": [
+          {
+            "title": "Slow Horses",
+            "subtitle": "Apple TV+"
+          },
+          {
+            "title": "The Bear",
+            "subtitle": "Disney+"
+          },
+          {
+            "title": "Severance",
+            "subtitle": "Apple TV+"
+          }
+        ],
+        "playing": [
+          {
+            "title": "Balatro"
+          },
+          {
+            "title": "Hades II"
+          },
+          {
+            "title": "Stardew Valley"
+          }
+        ],
+        "listening": [
+          {
+            "title": "Core Intuition",
+            "subtitle": "Podcast"
+          },
+          {
+            "title": "Micro Monday",
+            "subtitle": "Podcast"
+          }
+        ]
+      },
+      "tip": {
+        "id": "tip-2026-08-31",
+        "label": "Did you know?",
+        "title": "Micro.blog runs community challenges",
+        "body": "Photo and writing prompts from @challenges",
+        "username": "challenges",
+        "url": "https://micro.blog/challenges",
+        "glyph": "trophy.fill",
+        "starts": "2026-08-31T00:00:00Z"
+      }
+    }
+  ]
+}

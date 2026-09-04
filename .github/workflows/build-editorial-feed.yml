@@ -1,0 +1,27 @@
+name: Build editorial feed
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "editorial/issues/**"
+      - "editorial/build.py"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install pyyaml
+      - run: python3 editorial/build.py
+      - run: python3 editorial/validate.py editorial/feed.json
+      - name: Commit the built feed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add editorial/feed.json editorial/newsletter
+          git diff --cached --quiet || git commit -m "Build editorial feed"
+          git push
