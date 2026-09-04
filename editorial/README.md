@@ -39,7 +39,7 @@ tip:
 Your note for the week, in Markdown.
 ```
 
-Every section is optional. Artwork goes in `static/images/issues/` at 1200×675 and is published by the site; the app shows it on the Timeline card and at the top of the issue. Without artwork the app uses its accent card.
+Every section is optional. Artwork goes in `static/images/issues/` at 1200×675. Point `artwork` at the raw GitHub address of the file (`https://raw.githubusercontent.com/gr36/micro-social-website/main/static/images/issues/NAME.jpg`): it is live the moment the commit lands on `main`, whereas the site address depends on the next Netlify deploy. The app shows it on the Timeline card and as the cover of the edition. Without artwork the app uses its accent cover.
 
 ## What gets built
 
