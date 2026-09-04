@@ -23,6 +23,27 @@ NEWSLETTER = ROOT / "newsletter"
 
 FRONT = re.compile(r"^---\s*\n(.*?)\n---\s*\n?(.*)$", re.S)
 
+# Artwork lives in static/images/issues/ and is served raw from GitHub.
+# A short name like "issues/2026-09-05.jpg" or "2026-09-05.jpg" becomes
+# the full address; a full https:// address is left alone.
+RAW_IMAGES = "https://raw.githubusercontent.com/gr36/micro-social-website/main/static/images/"
+
+
+def artwork_url(value):
+    if not value:
+        return None
+    value = str(value).strip()
+    if value.startswith("http://") or value.startswith("https://"):
+        return value
+    value = value.lstrip("/")
+    if value.startswith("static/images/"):
+        value = value[len("static/images/"):]
+    elif value.startswith("images/"):
+        value = value[len("images/"):]
+    elif "/" not in value:
+        value = "issues/" + value
+    return RAW_IMAGES + value
+
 
 def fail(message):
     print(f"build: {message}")
@@ -83,7 +104,7 @@ def read_issue(path):
         "date": f"{issue_date.isoformat()}T00:00:00Z",
         "title": meta["title"],
         "summary": meta.get("summary"),
-        "artwork": meta.get("artwork"),
+        "artwork": artwork_url(meta.get("artwork")),
         "body": body,
         "books": books(),
         "people": people(),

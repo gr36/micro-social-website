@@ -39,7 +39,7 @@ tip:
 Your note for the week, in Markdown.
 ```
 
-Every section is optional. Artwork goes in `static/images/issues/` at 1200×675. Point `artwork` at the raw GitHub address of the file (`https://raw.githubusercontent.com/gr36/micro-social-website/main/static/images/issues/NAME.jpg`): it is live the moment the commit lands on `main`, whereas the site address depends on the next Netlify deploy. The app shows it on the Timeline card and as the cover of the edition. Without artwork the app uses its accent cover.
+Every section is optional. Artwork goes in `static/images/issues/` at 1200×675 and `artwork` is just its file name: the build turns it into the raw GitHub address, which is live the moment the commit lands on `main`. (A full `https://` address is used as given.) The site at microsocial.app is not served from this repository, so never point artwork there. The app shows it on the Timeline card and as the cover of the edition. Without artwork the app uses its accent cover.
 
 ## What gets built
 
