@@ -14,7 +14,7 @@ Every section is optional. Leave one out and the app carries on without it.
 - `updated`: when you last changed the file, ISO 8601.
 - `people`: `username` (required), `name`, `reason`. Shown in Find People instead of the built-in list. Anyone already followed is hidden.
 - `books`: `title` (required), `isbn`, `authors`, `cover` (URL), `reason`. Shown as Picks under the book recommendations. Without a `cover` the app fetches one by ISBN.
-- `events`: `id` (required, unique, never reuse one), `title` (required), `body`, `url`, `glyph` (an SF Symbol name), `starts`, `ends`. One card shows at the top of the Timeline while the event is live. Closing it hides that `id` for good on that phone.
+- `events`: `id` (required, unique, never reuse one), `title` (required), `label` (the small line above the title, "Did you know?" when left out), `body`, `username` (a Micro.blog account to open in the app), `url` (opened when there is no `username`), `glyph` (an SF Symbol name), `starts`, `ends`. One small row shows at the top of the Timeline while the event is live. Closing it hides that `id` for good on that phone.
 - `activity`: `watching`, `playing`, `listening`, each a list of `title` (required), `subtitle`, `image` (URL). Shown as a Popular Now strip on the Activity screen before a search; tapping one runs that search.
 
 Check a change with:
