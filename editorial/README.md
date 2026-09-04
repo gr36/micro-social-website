@@ -2,7 +2,16 @@
 
 The weekly edition Plus members see once at the top of the Timeline and can reopen from Plus Features, written as one Markdown file a week. Nothing here is hand-edited JSON: `feed.json` and the newsletter drafts are built from the issues by a GitHub Action whenever an issue changes on `main`.
 
-## Writing an edition
+## The desk (the easy way)
+
+```
+pip3 install pyyaml pillow
+python3 editorial/desk.py
+```
+
+It opens a page at localhost:8765. The left side is material: your Micro.blog bookmarks (save a link anywhere during the week and it shows up there) and the recent Discover posts for books, TV, movies, music and podcasts, with the books people are posting about counted up by ISBN. The right side is the edition: title, date, artwork, the note, and the lists. Tick a bookmark to make it a link, tap a post to add it as a pick, write the note. **Save & build** writes the issue file, resizes the artwork and builds and validates the feed. **Publish** commits and pushes to main. The first run asks for your Micro.blog app token (Account → App tokens); it stays on the Mac.
+
+## Writing an edition by hand
 
 Add `editorial/issues/YYYY-MM-DD.md`, dated the day it goes live (Saturdays). Write and commit it whenever you like: the app keeps it hidden until that date, and the built feed only promotes it to the top-level sections once the date has passed. Front matter carries the picks, the Markdown beneath it is your note.
 

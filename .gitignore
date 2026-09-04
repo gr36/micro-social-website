@@ -44,3 +44,5 @@ yarn-error.log*
 # Build output
 dist/
 build/ 
+# Micro Wrapped desk
+editorial/.desk-cache.json
