@@ -23,6 +23,9 @@ WATCH_HOSTS = ("letterboxd.com", "themoviedb.org", "imdb.com", "trakt.tv", "tv.a
 PLAY_HOSTS = ("store.steampowered.com", "backloggd.com", "rawg.io", "nintendo.com", "playstation.com", "xbox.com", "gog.com")
 LISTEN_HOSTS = ("music.apple.com", "open.spotify.com", "bandcamp.com", "overcast.fm", "podcasts.apple.com", "pocketcasts.com", "song.link", "album.link")
 LIMIT = 8
+# Accounts never featured and whose posts are never counted: the
+# COMMUNITY_EXCLUDE secret, comma-separated usernames, lower case.
+EXCLUDE = {name.strip().lower() for name in os.environ.get("COMMUNITY_EXCLUDE", "").split(",") if name.strip()}
 
 
 def api(path):
@@ -58,6 +61,8 @@ def main():
         for item in items:
             body = item.get("content_html") or ""
             by = ((item.get("author") or {}).get("_microblog") or {}).get("username") or (item.get("author") or {}).get("name")
+            if by and by.lower() in EXCLUDE:
+                continue
             if by:
                 entry = people.setdefault(by, {"username": by, "count": 0, "topics": set()})
                 entry["count"] += 1
@@ -94,7 +99,7 @@ def main():
         """New automatic rows first, then rows from the current file that
         the pull did not find (hand-added on the desk), up to the limit."""
         seen = {x[key] for x in new}
-        kept = [x for x in old or [] if x.get(key) not in seen]
+        kept = [x for x in old or [] if x.get(key) not in seen and str(x.get("username", "")).lower() not in EXCLUDE]
         return (new + kept)[:LIMIT]
 
     fresh_people = [{"username": p["username"], "name": p["username"], "reason": "Posting about " + ", ".join(sorted(p["topics"])) + " this week"} for p in top(people.values())]
