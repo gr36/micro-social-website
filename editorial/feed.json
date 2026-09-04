@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-09-04T13:34:18Z",
+  "updated": "2026-09-04T13:40:38Z",
   "issues": [
     {
       "id": "2026-08-31",
@@ -8,7 +8,7 @@
       "title": "Slow reads and a new challenge",
       "summary": "Two books people can't put down, three links worth your time, and the September photo challenge.",
       "artwork": "https://raw.githubusercontent.com/gr36/micro-social-website/main/editorial/issues/2026-08-31-cover.jpg",
-      "body": "Hello, and welcome to the first Micro Wrapped. The idea is simple: once a week, a short note on what's happening around Micro.blog, a few things worth reading, and some picks. Nothing here is automated. If it's in this edition it's because someone on Micro.blog was talking about it.",
+      "body": "The first edition on Micro Wrapped is navel gazing at is finest, what is it and what can it do?\n\nHello, and welcome to the first Micro Wrapped. The idea is simple: once a week, a short note on what's happening around Micro.blog, a few things worth reading, and some picks. Nothing here is automated. If it's in this edition it's because someone on Micro.blog was talking about it.\n\nFor the first edition I'm looking at micro.blog itself and helping you get the most out of it.",
       "notes": {
         "links": "Three pages that explain more of Micro.blog than most people ever find. The first one is the reason the timeline looks the way it does.",
         "books": "September is a reading month. Two novels keep coming up in the [books timeline](https://micro.blog/discover/books), one long and one you can finish in an evening. If you've not tried the Books tab yet, add one of them to Want to Read and see how the shelves work.",
@@ -73,11 +73,9 @@
       },
       "tip": {
         "id": "tip-2026-08-31",
-        "label": "Did you know?",
         "title": "Micro.blog runs community challenges",
         "body": "Photo and writing prompts from @challenges",
         "username": "challenges",
-        "url": "https://micro.blog/challenges",
         "glyph": "trophy.fill",
         "starts": "2026-08-31T00:00:00Z"
       }
