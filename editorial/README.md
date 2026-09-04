@@ -10,7 +10,7 @@ Add `editorial/issues/YYYY-MM-DD.md`, dated the day it goes live (Saturdays). Wr
 ---
 title: Slow reads and a new challenge
 date: 2026-08-31
-artwork: https://microsocial.app/images/issues/2026-08-31.jpg
+artwork: 2026-08-31.jpg
 summary: One line shown under the title.
 books:
   - isbn: "9780593321201"
@@ -39,7 +39,7 @@ tip:
 Your note for the week, in Markdown.
 ```
 
-Every section is optional. Artwork goes in `static/images/issues/` at 1200×675 and is published by the site; the app shows it on the Timeline card and at the top of the issue. Without artwork the app uses its accent card.
+Every section is optional. Artwork goes in `static/images/issues/` at 1200×675 and `artwork` is just its file name: the build turns it into the raw GitHub address, which is live the moment the commit lands on `main`. (A full `https://` address is used as given.) The app shows it on the Timeline card and as the cover of the edition. Without artwork the app uses its accent cover.
 
 ## What gets built
 

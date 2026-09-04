@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-09-04T07:48:49Z",
+  "updated": "2026-09-04T08:06:17Z",
   "people": [
     {
       "username": "manton",
@@ -101,7 +101,7 @@
       "date": "2026-08-31T00:00:00Z",
       "title": "Slow reads and a new challenge",
       "summary": "Two books people can't put down, five accounts worth a follow, and the September photo challenge.",
-      "artwork": "https://microsocial.app/images/issues/2026-08-31.jpg",
+      "artwork": "https://raw.githubusercontent.com/gr36/micro-social-website/main/static/images/issues/2026-08-31.jpg",
       "body": "September is a reading month on Micro.blog. Two novels keep coming up in the books timeline, one long and one you can finish in an evening, and the photo challenge is back with a new prompt every day.\n\nIf you're new here, the five accounts below are the ones to follow first. They'll tell you what's changing on the platform before anyone else does.",
       "books": [
         {
