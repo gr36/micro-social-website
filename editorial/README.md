@@ -9,8 +9,8 @@ Add `editorial/issues/YYYY-MM-DD.md`, dated the Monday it goes live. Front matte
 ```
 ---
 title: Slow reads and a new challenge
-date: 2026-09-07
-artwork: https://microsocial.app/images/issues/2026-09-07.jpg
+date: 2026-08-31
+artwork: https://microsocial.app/images/issues/2026-08-31.jpg
 summary: One line shown under the title.
 books:
   - isbn: "9780593321201"

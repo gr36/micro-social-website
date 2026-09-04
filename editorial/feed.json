@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-09-04T07:16:09Z",
+  "updated": "2026-09-04T07:18:11Z",
   "people": [
     {
       "username": "manton",
@@ -48,14 +48,14 @@
   ],
   "events": [
     {
-      "id": "tip-2026-09-07",
+      "id": "tip-2026-08-31",
       "label": "Did you know?",
       "title": "Micro.blog runs community challenges",
       "body": "Photo and writing prompts from @challenges",
       "username": "challenges",
       "url": "https://micro.blog/challenges",
       "glyph": "trophy.fill",
-      "starts": "2026-09-07T00:00:00Z"
+      "starts": "2026-08-31T00:00:00Z"
     }
   ],
   "activity": {
@@ -97,11 +97,11 @@
   },
   "issues": [
     {
-      "id": "2026-09-07",
-      "date": "2026-09-07T00:00:00Z",
+      "id": "2026-08-31",
+      "date": "2026-08-31T00:00:00Z",
       "title": "Slow reads and a new challenge",
       "summary": "Two books people can't put down, five accounts worth a follow, and the September photo challenge.",
-      "artwork": "https://microsocial.app/images/issues/2026-09-07.jpg",
+      "artwork": "https://microsocial.app/images/issues/2026-08-31.jpg",
       "body": "September is a reading month on Micro.blog. Two novels keep coming up in the books timeline, one long and one you can finish in an evening, and the photo challenge is back with a new prompt every day.\n\nIf you're new here, the five accounts below are the ones to follow first. They'll tell you what's changing on the platform before anyone else does.",
       "books": [
         {
@@ -186,14 +186,14 @@
         ]
       },
       "tip": {
-        "id": "tip-2026-09-07",
+        "id": "tip-2026-08-31",
         "label": "Did you know?",
         "title": "Micro.blog runs community challenges",
         "body": "Photo and writing prompts from @challenges",
         "username": "challenges",
         "url": "https://micro.blog/challenges",
         "glyph": "trophy.fill",
-        "starts": "2026-09-07T00:00:00Z"
+        "starts": "2026-08-31T00:00:00Z"
       }
     }
   ]
