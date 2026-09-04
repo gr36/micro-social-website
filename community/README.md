@@ -4,7 +4,7 @@ One JSON file the app fetches at most once a day. It carries suggested people, b
 
 ## Where it lives
 
-The file is `static/community/feed.json` in this repository. Hugo publishes everything under `static/` as-is, so once deployed it is at `https://microsocial.app/community/feed.json`. The app reads the raw file straight from GitHub (`main` branch), so a merged edit is live for the app without waiting for a site deploy. The URL the app reads is the `feedURL` constant in the app's `Services/CommunityFeedService.swift`.
+The file is `community/feed.json` in this repository, outside `static/` so Hugo leaves it out of the site. The app reads it raw from GitHub on `main`, so a merged edit is live for the app straight away. The URL the app reads is the `feedURL` constant in the app's `Services/CommunityFeedService.swift`.
 
 ## Editing
 
@@ -20,5 +20,5 @@ Every section is optional. Leave one out and the app carries on without it.
 Check a change with:
 
 ```
-python3 community/validate.py static/community/feed.json
+python3 community/validate.py community/feed.json
 ```
