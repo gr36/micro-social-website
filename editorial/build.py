@@ -22,10 +22,10 @@ FEED = ROOT / "feed.json"
 
 FRONT = re.compile(r"^---\s*\n(.*?)\n---\s*\n?(.*)$", re.S)
 
-# Covers live in editorial/covers/ next to the editions and are served raw
+# Covers sit in editorial/issues/ beside the editions and are served raw
 # from GitHub. A file name like "2026-09-05-cover.jpg" becomes the full
 # address; a full https:// address is left alone.
-RAW_COVERS = "https://raw.githubusercontent.com/gr36/micro-social-website/main/editorial/covers/"
+RAW_COVERS = "https://raw.githubusercontent.com/gr36/micro-social-website/main/editorial/issues/"
 
 
 def artwork_url(value):

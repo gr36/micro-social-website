@@ -1,13 +1,13 @@
 {
   "version": 1,
-  "updated": "2026-09-04T13:33:36Z",
+  "updated": "2026-09-04T13:34:06Z",
   "issues": [
     {
       "id": "2026-08-31",
       "date": "2026-08-31T00:00:00Z",
       "title": "Slow reads and a new challenge",
       "summary": "Two books people can't put down, three links worth your time, and the September photo challenge.",
-      "artwork": "https://raw.githubusercontent.com/gr36/micro-social-website/main/editorial/covers/2026-08-31-cover.jpg",
+      "artwork": "https://raw.githubusercontent.com/gr36/micro-social-website/main/editorial/issues/2026-08-31-cover.jpg",
       "body": "Hello, and welcome to the first Micro Wrapped. The idea is simple: once a week, a short note on what's happening around Micro.blog, a few things worth reading, and some picks. Nothing here is automated. If it's in this edition it's because someone on Micro.blog was talking about it.",
       "notes": {
         "links": "Three pages that explain more of Micro.blog than most people ever find. The first one is the reason the timeline looks the way it does.",
