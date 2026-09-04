@@ -1,0 +1,16 @@
+name: Validate community feed
+
+on:
+  push:
+    paths:
+      - "community/**"
+  pull_request:
+    paths:
+      - "community/**"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 community/validate.py community/feed.json
