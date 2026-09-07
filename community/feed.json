@@ -1,48 +1,83 @@
 {
   "version": 1,
-  "updated": "2026-09-04T12:20:10Z",
+  "updated": "2026-09-07T12:05:15Z",
   "people": [
+    {
+      "username": "Robalex",
+      "name": "Robalex",
+      "reason": "Posting about books, movies, TV, games this week"
+    },
+    {
+      "username": "MereCivilian",
+      "name": "MereCivilian",
+      "reason": "Posting about TV this week"
+    },
+    {
+      "username": "rom",
+      "name": "rom",
+      "reason": "Posting about movies, TV this week"
+    },
     {
       "username": "endonend",
       "name": "endonend",
       "reason": "Posting about music this week"
     },
     {
-      "username": "MereCivilian",
-      "name": "MereCivilian",
-      "reason": "Posting about tv this week"
-    },
-    {
-      "username": "rom",
-      "name": "rom",
-      "reason": "Posting about movies, tv this week"
-    },
-    {
-      "username": "KimberlyHirsh",
-      "name": "KimberlyHirsh",
-      "reason": "Posting about books this week"
-    },
-    {
       "username": "josh_____d",
       "name": "josh_____d",
-      "reason": "Posting about books, movies, music this week"
+      "reason": "Posting about movies, music this week"
     },
     {
-      "username": "agilelisa",
-      "name": "agilelisa",
-      "reason": "Posting about books this week"
+      "username": "KONMAI",
+      "name": "KONMAI",
+      "reason": "Posting about movies, games this week"
     },
     {
-      "username": "manton",
-      "name": "manton",
-      "reason": "Posting about movies, music, tv this week"
+      "username": "toddgrotenhuis",
+      "name": "toddgrotenhuis",
+      "reason": "Posting about music, games this week"
+    },
+    {
+      "username": "mattypenny",
+      "name": "mattypenny",
+      "reason": "Posting about books, music this week"
     }
   ],
   "books": [
     {
+      "isbn": "0802163629",
+      "title": "Orbital",
+      "cover": "https://micro.blog/books/0802163629/cover.jpg",
+      "reason": "Mentioned by 2 people this week"
+    },
+    {
       "isbn": "9780486424491",
       "title": "Jane Eyre",
       "cover": "https://micro.blog/books/9780486424491/cover.jpg",
+      "reason": "Mentioned by 2 people this week"
+    },
+    {
+      "isbn": "9780393063820",
+      "title": "(Book link)",
+      "cover": "https://micro.blog/books/9780393063820/cover.jpg",
+      "reason": "Mentioned by 2 people this week"
+    },
+    {
+      "isbn": "9781803414300",
+      "title": "Capitalist Realism Is There No Alternative?",
+      "cover": "https://micro.blog/books/9781803414300/cover.jpg",
+      "reason": "Mentioned by 2 people this week"
+    },
+    {
+      "isbn": "9781466804821",
+      "title": "2666",
+      "cover": "https://micro.blog/books/9781466804821/cover.jpg",
+      "reason": "Mentioned by 2 people this week"
+    },
+    {
+      "isbn": "1439177740",
+      "title": "I Am Pilgrim",
+      "cover": "https://micro.blog/books/1439177740/cover.jpg",
       "reason": "Mentioned by 2 people this week"
     },
     {
@@ -56,36 +91,6 @@
       "title": "The Laws of Thought",
       "cover": "https://micro.blog/books/9780008711481/cover.jpg",
       "reason": "Mentioned by 2 people this week"
-    },
-    {
-      "isbn": "9780671655747",
-      "title": "Shards of Honor",
-      "cover": "https://micro.blog/books/9780671655747/cover.jpg",
-      "reason": "Mentioned by 1 person this week"
-    },
-    {
-      "isbn": "9781514002254",
-      "title": "To Live Well",
-      "cover": "https://micro.blog/books/9781514002254/cover.jpg",
-      "reason": "Mentioned by 1 person this week"
-    },
-    {
-      "isbn": "9780830821907",
-      "title": "Ephesians",
-      "cover": "https://micro.blog/books/9780830821907/cover.jpg",
-      "reason": "Mentioned by 1 person this week"
-    },
-    {
-      "isbn": "9780553803716",
-      "title": "Foundation (Foundation, #1)",
-      "cover": "https://micro.blog/books/9780553803716/cover.jpg",
-      "reason": "Mentioned by 2 people this week"
-    },
-    {
-      "isbn": "9798217154746",
-      "title": "The Things We Never Say: A Novel",
-      "cover": "https://micro.blog/books/9798217154746/cover.jpg",
-      "reason": "Mentioned by 1 person this week"
     }
   ],
   "events": [
@@ -104,15 +109,15 @@
   "activity": {
     "watching": [
       {
-        "title": "The Dog Stars",
-        "subtitle": "Themoviedb"
-      },
-      {
         "title": "Vigil [2021] S3E2",
         "subtitle": "Themoviedb"
       },
       {
         "title": "Trigger Point [2022] S4E1",
+        "subtitle": "Themoviedb"
+      },
+      {
+        "title": "Coyote vs. Acme",
         "subtitle": "Themoviedb"
       },
       {
@@ -124,19 +129,23 @@
         "subtitle": "Themoviedb"
       },
       {
-        "title": "Spider-Man: Brand New Day",
+        "title": "The Dog Stars",
         "subtitle": "Themoviedb"
       },
       {
-        "title": "Terminator 2: Judgment Day",
+        "title": "Widow’s Bay Season 1",
         "subtitle": "Themoviedb"
       },
       {
-        "title": "Ghost in the Shell",
+        "title": "Behind Her Eyes",
         "subtitle": "Themoviedb"
       }
     ],
     "playing": [
+      {
+        "title": "Starfox 64",
+        "subtitle": "Nintendo"
+      },
       {
         "title": "Balatro"
       },
@@ -148,6 +157,18 @@
       }
     ],
     "listening": [
+      {
+        "title": "Pops is Tops: The Verve Studio Albums",
+        "subtitle": "Music"
+      },
+      {
+        "title": "I’m camera",
+        "subtitle": "Album"
+      },
+      {
+        "title": "“Sky River”",
+        "subtitle": "Song"
+      },
       {
         "title": "North Meets West Trio",
         "subtitle": "Album"
@@ -166,18 +187,6 @@
       },
       {
         "title": "Your New Place",
-        "subtitle": "Open"
-      },
-      {
-        "title": "Racing Mount Pleasant",
-        "subtitle": "Open"
-      },
-      {
-        "title": "Call It Easy",
-        "subtitle": "Open"
-      },
-      {
-        "title": "Way Out - stevestevesteve",
         "subtitle": "Open"
       }
     ]
