@@ -1,180 +1,191 @@
 {
   "version": 1,
-  "updated": "2026-09-07T12:05:15Z",
-  "people": [
-    {
-      "username": "Robalex",
-      "name": "Robalex",
-      "reason": "Posting about books, movies, TV, games this week"
-    },
-    {
-      "username": "MereCivilian",
-      "name": "MereCivilian",
-      "reason": "Posting about TV this week"
-    },
-    {
-      "username": "rom",
-      "name": "rom",
-      "reason": "Posting about movies, TV this week"
-    },
-    {
-      "username": "endonend",
-      "name": "endonend",
-      "reason": "Posting about music this week"
-    },
-    {
-      "username": "josh_____d",
-      "name": "josh_____d",
-      "reason": "Posting about movies, music this week"
-    },
-    {
-      "username": "KONMAI",
-      "name": "KONMAI",
-      "reason": "Posting about movies, games this week"
-    },
-    {
-      "username": "toddgrotenhuis",
-      "name": "toddgrotenhuis",
-      "reason": "Posting about music, games this week"
-    },
-    {
-      "username": "mattypenny",
-      "name": "mattypenny",
-      "reason": "Posting about books, music this week"
-    }
-  ],
-  "books": [
-    {
-      "isbn": "0802163629",
-      "title": "Orbital",
-      "cover": "https://micro.blog/books/0802163629/cover.jpg",
-      "reason": "Mentioned by 2 people this week"
-    },
-    {
-      "isbn": "9780486424491",
-      "title": "Jane Eyre",
-      "cover": "https://micro.blog/books/9780486424491/cover.jpg",
-      "reason": "Mentioned by 2 people this week"
-    },
-    {
-      "isbn": "9780393063820",
-      "title": "(Book link)",
-      "cover": "https://micro.blog/books/9780393063820/cover.jpg",
-      "reason": "Mentioned by 2 people this week"
-    },
-    {
-      "isbn": "9781803414300",
-      "title": "Capitalist Realism Is There No Alternative?",
-      "cover": "https://micro.blog/books/9781803414300/cover.jpg",
-      "reason": "Mentioned by 2 people this week"
-    },
-    {
-      "isbn": "9781466804821",
-      "title": "2666",
-      "cover": "https://micro.blog/books/9781466804821/cover.jpg",
-      "reason": "Mentioned by 2 people this week"
-    },
-    {
-      "isbn": "1439177740",
-      "title": "I Am Pilgrim",
-      "cover": "https://micro.blog/books/1439177740/cover.jpg",
-      "reason": "Mentioned by 2 people this week"
-    },
-    {
-      "isbn": "9781786581426",
-      "title": "Late Light",
-      "cover": "https://micro.blog/books/9781786581426/cover.jpg",
-      "reason": "Mentioned by 1 person this week"
-    },
-    {
-      "isbn": "9780008711481",
-      "title": "The Laws of Thought",
-      "cover": "https://micro.blog/books/9780008711481/cover.jpg",
-      "reason": "Mentioned by 2 people this week"
-    }
-  ],
+  "updated": "2026-09-10T03:25:12Z",
   "activity": {
     "watching": [
       {
-        "title": "Vigil [2021] S3E2",
-        "subtitle": "Themoviedb"
+        "title": "Lucky",
+        "subtitle": "Themoviedb",
+        "by": [
+          {
+            "username": "manton",
+            "name": "Manton Reece",
+            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2025%2F22%2F3.jpg"
+          },
+          {
+            "username": "rom",
+            "name": "rom",
+            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2022%2F2006.jpg"
+          }
+        ]
       },
       {
-        "title": "Trigger Point [2022] S4E1",
-        "subtitle": "Themoviedb"
+        "title": "House of the Dragon",
+        "subtitle": "Themoviedb",
+        "by": [
+          {
+            "username": "manton",
+            "name": "Manton Reece",
+            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2025%2F22%2F3.jpg"
+          },
+          {
+            "username": "rom",
+            "name": "rom",
+            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2022%2F2006.jpg"
+          }
+        ]
       },
       {
         "title": "Coyote vs. Acme",
-        "subtitle": "Themoviedb"
+        "subtitle": "Themoviedb",
+        "by": [
+          {
+            "username": "roberto",
+            "name": "Roberto Mateu",
+            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2022%2F129.jpg"
+          },
+          {
+            "username": "brynspiration",
+            "name": "Bryn Jones",
+            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2025%2F31%2F1807507.jpg"
+          }
+        ]
       },
       {
         "title": "Rental Family",
-        "subtitle": "Themoviedb"
-      },
-      {
-        "title": "The Movie Database",
-        "subtitle": "Themoviedb"
+        "subtitle": "Themoviedb",
+        "by": [
+          {
+            "username": "incongruousm",
+            "name": "Jason Deabill",
+            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Fmicro.blog%2Fincongruousm%2Favatar.jpg"
+          }
+        ]
       },
       {
         "title": "The Dog Stars",
-        "subtitle": "Themoviedb"
+        "subtitle": "Themoviedb",
+        "by": [
+          {
+            "username": "incongruousm",
+            "name": "Jason Deabill",
+            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Fmicro.blog%2Fincongruousm%2Favatar.jpg"
+          }
+        ]
       },
       {
-        "title": "Widow’s Bay Season 1",
-        "subtitle": "Themoviedb"
+        "title": "The Big Bang Theory",
+        "subtitle": "Themoviedb",
+        "by": [
+          {
+            "username": "manton",
+            "name": "Manton Reece",
+            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2025%2F22%2F3.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Widow’s Bay",
+        "subtitle": "Themoviedb",
+        "by": [
+          {
+            "username": "numericcitizen",
+            "name": "Numeric Citizen",
+            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Fmicro.blog%2Fnumericcitizen%2Favatar.jpg"
+          }
+        ]
       },
       {
         "title": "Behind Her Eyes",
-        "subtitle": "Themoviedb"
+        "subtitle": "Themoviedb",
+        "by": [
+          {
+            "username": "gammalt",
+            "name": "Robert Birming",
+            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Fwww.gravatar.com%2Favatar%2F0d7e65b535e17b3bdc0a3f942da94afe%3Fs%3D96%26d%3Dhttps%253A%252F%252Fmicro.blog%252Fimages%252Fblank_avatar.png"
+          }
+        ]
       }
     ],
     "playing": [
       {
         "title": "Starfox 64",
-        "subtitle": "Nintendo"
-      },
-      {
-        "title": "Balatro"
-      },
-      {
-        "title": "Hades II"
-      },
-      {
-        "title": "Stardew Valley"
+        "subtitle": "Nintendo",
+        "by": [
+          {
+            "username": "Robalex",
+            "name": "Rob Alex",
+            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2026%2F13%2F1895910.jpg"
+          }
+        ]
       }
     ],
     "listening": [
       {
         "title": "Pops is Tops: The Verve Studio Albums",
-        "subtitle": "Music"
+        "subtitle": "Music",
+        "by": [
+          {
+            "username": "jacks",
+            "name": "workthecount",
+            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2025%2F30%2F1371694.jpg"
+          }
+        ]
+      },
+      {
+        "title": "The Night Starts Here",
+        "subtitle": "Music",
+        "by": [
+          {
+            "username": "mroutley",
+            "name": "Matt Routley",
+            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2023%2F51%2F5597.jpg"
+          }
+        ]
+      },
+      {
+        "title": "embed.music.apple.com/...",
+        "subtitle": "Embed",
+        "by": [
+          {
+            "username": "mroutley",
+            "name": "Matt Routley",
+            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2023%2F51%2F5597.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Weapons of Jazz Destruction by Nostalgia77 Octet",
+        "subtitle": "Nostalgia77",
+        "by": [
+          {
+            "username": "rglenny",
+            "name": "Notes to Self",
+            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2024%2F30%2F1354706.jpg"
+          }
+        ]
       },
       {
         "title": "I’m camera",
-        "subtitle": "Album"
+        "subtitle": "Album",
+        "by": [
+          {
+            "username": "braindump",
+            "name": "Braindump",
+            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Fthebraindumpblog.com%2Ffavicon.ico"
+          }
+        ]
       },
       {
         "title": "“Sky River”",
-        "subtitle": "Song"
-      },
-      {
-        "title": "North Meets West Trio",
-        "subtitle": "Album"
-      },
-      {
-        "title": "here",
-        "subtitle": "Boysnoize"
-      },
-      {
-        "title": "new one",
-        "subtitle": "R4Ggs"
-      },
-      {
-        "title": "You Pt. 2",
-        "subtitle": "Open"
-      },
-      {
-        "title": "Your New Place",
-        "subtitle": "Open"
+        "subtitle": "Song",
+        "by": [
+          {
+            "username": "mjkaul",
+            "name": "Matt Kaul",
+            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2024%2F21%2F79.jpg"
+          }
+        ]
       }
     ]
   }
