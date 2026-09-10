@@ -4,7 +4,7 @@
 Runs every Monday from the workflow in this repository (and on demand from
 the Actions tab): the titles linked to film, game and music sites this
 week, with up to three of the people behind each, rebuilt from scratch.
-The tips (events) in the current file are kept. Needs MICROBLOG_TOKEN.
+Needs MICROBLOG_TOKEN.
 """
 import html, json, os, re, sys
 from datetime import datetime, timezone
@@ -110,13 +110,6 @@ def main():
     def top(items):
         return sorted(items, key=lambda x: -x["count"])[:LIMIT]
 
-    existing = {}
-    if FEED.exists():
-        try:
-            existing = json.loads(FEED.read_text())
-        except json.JSONDecodeError:
-            existing = {}
-
     book_titles = {b["title"].lower() for b in books.values()}
 
     def faces(entry):
@@ -131,7 +124,6 @@ def main():
     feed = {
         "version": 1,
         "updated": datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z"),
-        "events": existing.get("events") or [],
         "activity": {
             key: [{"title": t["title"], "subtitle": t["subtitle"], "by": faces(t)} for t in top(v for v in titles[key].values() if v["title"].lower() not in book_titles)]
             for key in ("watching", "playing", "listening")

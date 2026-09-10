@@ -93,19 +93,6 @@
       "reason": "Mentioned by 2 people this week"
     }
   ],
-  "events": [
-    {
-      "id": "challenges-2026-09",
-      "label": "Did you know?",
-      "title": "Micro.blog runs community challenges",
-      "body": "Photo and writing prompts from @challenges",
-      "username": "challenges",
-      "url": "https://micro.blog/challenges",
-      "glyph": "trophy.fill",
-      "starts": "2026-09-01T00:00:00Z",
-      "ends": "2026-12-31T23:59:59Z"
-    }
-  ],
   "activity": {
     "watching": [
       {
