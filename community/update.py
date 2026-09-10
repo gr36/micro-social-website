@@ -85,11 +85,12 @@ def main():
                 entry = people.setdefault(by, {"username": by, "name": author.get("name") or by, "avatar": author.get("avatar"), "count": 0, "topics": set()})
                 entry["count"] += 1
                 entry["topics"].add(collection)
+            poster = {"username": by, "name": author.get("name") or by, "avatar": author.get("avatar")} if by else None
             for isbn, inner in BOOK_LINK.findall(body):
-                entry = books.setdefault(isbn, {"isbn": isbn, "title": strip_html(inner) or ("ISBN " + isbn), "count": 0, "by": set()})
+                entry = books.setdefault(isbn, {"isbn": isbn, "title": strip_html(inner) or ("ISBN " + isbn), "count": 0, "by": {}})
                 entry["count"] += 1
-                if by:
-                    entry["by"].add(by)
+                if poster:
+                    entry["by"].setdefault(by, poster)
             for url, inner in LINK.findall(body):
                 url = html.unescape(url)
                 host = host_of(url)
@@ -101,8 +102,10 @@ def main():
                 key = "watching" if matches(host, WATCH_HOSTS) else "playing" if matches(host, PLAY_HOSTS) else "listening" if matches(host, LISTEN_HOSTS) else None
                 title = clean_title(text, host) if key else None
                 if key and title:
-                    entry = titles[key].setdefault(title.lower(), {"title": title, "subtitle": host.split(".")[0].title(), "count": 0})
+                    entry = titles[key].setdefault(title.lower(), {"title": title, "subtitle": host.split(".")[0].title(), "count": 0, "by": {}})
                     entry["count"] += 1
+                    if poster:
+                        entry["by"].setdefault(by, poster)
 
     def top(items):
         return sorted(items, key=lambda x: -x["count"])[:LIMIT]
@@ -115,6 +118,16 @@ def main():
             existing = {}
 
     book_titles = {b["title"].lower() for b in books.values()}
+
+    def faces(entry):
+        """Up to three people behind a row, with avatar when known."""
+        out = []
+        for person in list(entry["by"].values())[:3]:
+            row = {"username": person["username"], "name": person["name"]}
+            if person.get("avatar"):
+                row["avatar"] = person["avatar"]
+            out.append(row)
+        return out
     feed = {
         "version": 1,
         "updated": datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z"),
@@ -125,12 +138,12 @@ def main():
         ],
         "books": [
             {"isbn": b["isbn"], "title": b["title"], "cover": f"https://micro.blog/books/{b['isbn']}/cover.jpg",
-             "reason": f"Mentioned by {len(b['by'])} {'person' if len(b['by']) == 1 else 'people'} this week"}
+             "reason": f"Mentioned by {len(b['by'])} {'person' if len(b['by']) == 1 else 'people'} this week", "by": faces(b)}
             for b in top(books.values())
         ],
         "events": existing.get("events") or [],
         "activity": {
-            key: [{"title": t["title"], "subtitle": t["subtitle"]} for t in top(v for v in titles[key].values() if v["title"].lower() not in book_titles)]
+            key: [{"title": t["title"], "subtitle": t["subtitle"], "by": faces(t)} for t in top(v for v in titles[key].values() if v["title"].lower() not in book_titles)]
             for key in ("watching", "playing", "listening")
         },
     }
