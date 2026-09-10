@@ -2,9 +2,9 @@
 """Rebuilds community/feed.json from Micro.blog's Discover topics.
 
 Runs every Monday from the workflow in this repository (and on demand from
-the Actions tab): the people posting most, the books linked most, and titles
-linked to film, game and music sites, each rebuilt from scratch. The tips
-(events) in the current file are kept. Needs MICROBLOG_TOKEN.
+the Actions tab): the titles linked to film, game and music sites this
+week, with up to three of the people behind each, rebuilt from scratch.
+The tips (events) in the current file are kept. Needs MICROBLOG_TOKEN.
 """
 import html, json, os, re, sys
 from datetime import datetime, timezone
@@ -131,27 +131,14 @@ def main():
     feed = {
         "version": 1,
         "updated": datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z"),
-        "people": [
-            {"username": p["username"], "name": p["name"], "avatar": p["avatar"],
-             "reason": "Posting about " + ", ".join(TOPIC_LABELS.get(t, t) for t in sorted(p["topics"])) + " this week"}
-            for p in top(people.values())
-        ],
-        "books": [
-            {"isbn": b["isbn"], "title": b["title"], "cover": f"https://micro.blog/books/{b['isbn']}/cover.jpg",
-             "reason": f"Mentioned by {len(b['by'])} {'person' if len(b['by']) == 1 else 'people'} this week", "by": faces(b)}
-            for b in top(books.values())
-        ],
         "events": existing.get("events") or [],
         "activity": {
             key: [{"title": t["title"], "subtitle": t["subtitle"], "by": faces(t)} for t in top(v for v in titles[key].values() if v["title"].lower() not in book_titles)]
             for key in ("watching", "playing", "listening")
         },
     }
-    for person in feed["people"]:
-        if not person["avatar"]:
-            del person["avatar"]
     FEED.write_text(json.dumps(feed, indent=2, ensure_ascii=False) + "\n")
-    print(f"feed.json: {len(feed['people'])} people, {len(feed['books'])} books, " + ", ".join(f"{k} {len(v)}" for k, v in feed["activity"].items()))
+    print("feed.json: " + ", ".join(f"{k} {len(v)}" for k, v in feed["activity"].items()))
 
 
 if __name__ == "__main__":
