@@ -2,10 +2,9 @@
 """Rebuilds community/feed.json from Micro.blog's Discover topics.
 
 Runs every Monday from the workflow in this repository (and on demand from
-the Actions tab). It refreshes the automatic parts: the people posting most,
-the books linked most, and titles linked to film, game and music sites.
-Anything hand-added on the desk that it did not find this week, and every
-tip, is kept. Needs MICROBLOG_TOKEN in the environment.
+the Actions tab): the people posting most, the books linked most, and titles
+linked to film, game and music sites, each rebuilt from scratch. The tips
+(events) in the current file are kept. Needs MICROBLOG_TOKEN.
 """
 import html, json, os, re, sys
 from datetime import datetime, timezone
@@ -24,6 +23,23 @@ WATCH_HOSTS = ("letterboxd.com", "themoviedb.org", "imdb.com", "trakt.tv", "tv.a
 PLAY_HOSTS = ("store.steampowered.com", "backloggd.com", "rawg.io", "nintendo.com", "playstation.com", "xbox.com", "gog.com")
 LISTEN_HOSTS = ("music.apple.com", "open.spotify.com", "bandcamp.com", "overcast.fm", "podcasts.apple.com", "pocketcasts.com", "song.link", "album.link")
 LIMIT = 8
+# Link text that is just the site's own name, not a title
+SITE_NAMES = {"the movie database", "tmdb", "letterboxd", "imdb", "trakt", "justwatch", "netflix", "apple tv", "apple tv+",
+              "steam", "backloggd", "rawg", "nintendo", "playstation", "xbox", "gog", "gog.com",
+              "apple music", "spotify", "bandcamp", "overcast", "apple podcasts", "pocket casts", "song.link", "album.link"}
+# Trailing year, season and episode markers: "Vigil [2021] S3E2" -> "Vigil"
+TITLE_NOISE = re.compile(r"\s*(\[\d{4}\]|\(\d{4}\)|S\d{1,2}E\d{1,3}|Season \d+|Episode \d+|,? \d{4})\s*", re.I)
+
+
+def clean_title(text, host):
+    """The title as a person would say it, or None if the link text is not
+    a title at all."""
+    title = TITLE_NOISE.sub(" ", text).strip(" -:–|")
+    title = re.sub(r"\s{2,}", " ", title)
+    low = title.lower()
+    if not title or low in SITE_NAMES or low.replace(" ", "") == host.split(".")[0]:
+        return None
+    return title
 # Accounts never featured and whose posts are never counted: the
 # COMMUNITY_EXCLUDE secret, comma-separated usernames, lower case.
 EXCLUDE = {name.strip().lower() for name in os.environ.get("COMMUNITY_EXCLUDE", "").split(",") if name.strip()}
@@ -61,11 +77,12 @@ def main():
             continue
         for item in items:
             body = item.get("content_html") or ""
-            by = ((item.get("author") or {}).get("_microblog") or {}).get("username") or (item.get("author") or {}).get("name")
+            author = item.get("author") or {}
+            by = (author.get("_microblog") or {}).get("username") or author.get("name")
             if by and by.lower() in EXCLUDE:
                 continue
             if by:
-                entry = people.setdefault(by, {"username": by, "count": 0, "topics": set()})
+                entry = people.setdefault(by, {"username": by, "name": author.get("name") or by, "avatar": author.get("avatar"), "count": 0, "topics": set()})
                 entry["count"] += 1
                 entry["topics"].add(collection)
             for isbn, inner in BOOK_LINK.findall(body):
@@ -82,8 +99,9 @@ def main():
                 if not text or text.startswith("http"):
                     continue
                 key = "watching" if matches(host, WATCH_HOSTS) else "playing" if matches(host, PLAY_HOSTS) else "listening" if matches(host, LISTEN_HOSTS) else None
-                if key:
-                    entry = titles[key].setdefault(text, {"title": text, "subtitle": host.split(".")[0].title(), "count": 0})
+                title = clean_title(text, host) if key else None
+                if key and title:
+                    entry = titles[key].setdefault(title.lower(), {"title": title, "subtitle": host.split(".")[0].title(), "count": 0})
                     entry["count"] += 1
 
     def top(items):
@@ -96,27 +114,29 @@ def main():
         except json.JSONDecodeError:
             existing = {}
 
-    def keep(old, new, key):
-        """New automatic rows first, then rows from the current file that
-        the pull did not find (hand-added on the desk), up to the limit."""
-        seen = {x[key] for x in new}
-        kept = [x for x in old or [] if x.get(key) not in seen and str(x.get("username", "")).lower() not in EXCLUDE]
-        return (new + kept)[:LIMIT]
-
-    fresh_people = [{"username": p["username"], "name": p["username"], "reason": "Posting about " + ", ".join(TOPIC_LABELS.get(t, t) for t in sorted(p["topics"])) + " this week"} for p in top(people.values())]
-    fresh_books = [{"isbn": b["isbn"], "title": b["title"], "cover": f"https://micro.blog/books/{b['isbn']}/cover.jpg", "reason": f"Mentioned by {len(b['by'])} {'person' if len(b['by']) == 1 else 'people'} this week"} for b in top(books.values())]
-    old_activity = existing.get("activity") or {}
+    book_titles = {b["title"].lower() for b in books.values()}
     feed = {
         "version": 1,
         "updated": datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z"),
-        "people": keep(existing.get("people"), fresh_people, "username"),
-        "books": keep(existing.get("books"), fresh_books, "isbn"),
+        "people": [
+            {"username": p["username"], "name": p["name"], "avatar": p["avatar"],
+             "reason": "Posting about " + ", ".join(TOPIC_LABELS.get(t, t) for t in sorted(p["topics"])) + " this week"}
+            for p in top(people.values())
+        ],
+        "books": [
+            {"isbn": b["isbn"], "title": b["title"], "cover": f"https://micro.blog/books/{b['isbn']}/cover.jpg",
+             "reason": f"Mentioned by {len(b['by'])} {'person' if len(b['by']) == 1 else 'people'} this week"}
+            for b in top(books.values())
+        ],
         "events": existing.get("events") or [],
         "activity": {
-            key: keep(old_activity.get(key), [{"title": t["title"], "subtitle": t["subtitle"]} for t in top(titles[key].values())], "title")
+            key: [{"title": t["title"], "subtitle": t["subtitle"]} for t in top(v for v in titles[key].values() if v["title"].lower() not in book_titles)]
             for key in ("watching", "playing", "listening")
         },
     }
+    for person in feed["people"]:
+        if not person["avatar"]:
+            del person["avatar"]
     FEED.write_text(json.dumps(feed, indent=2, ensure_ascii=False) + "\n")
     print(f"feed.json: {len(feed['people'])} people, {len(feed['books'])} books, " + ", ".join(f"{k} {len(v)}" for k, v in feed["activity"].items()))
 
