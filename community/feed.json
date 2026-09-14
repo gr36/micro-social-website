@@ -1,8 +1,19 @@
 {
   "version": 1,
-  "updated": "2026-09-10T03:25:12Z",
+  "updated": "2026-09-14T12:21:09Z",
   "activity": {
     "watching": [
+      {
+        "title": "Ludwig",
+        "subtitle": "Themoviedb",
+        "by": [
+          {
+            "username": "rom",
+            "name": "rom",
+            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2022%2F2006.jpg"
+          }
+        ]
+      },
       {
         "title": "Lucky",
         "subtitle": "Themoviedb",
@@ -36,40 +47,13 @@
         ]
       },
       {
-        "title": "Coyote vs. Acme",
+        "title": "Ludwig ,",
         "subtitle": "Themoviedb",
         "by": [
           {
-            "username": "roberto",
-            "name": "Roberto Mateu",
-            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2022%2F129.jpg"
-          },
-          {
-            "username": "brynspiration",
-            "name": "Bryn Jones",
-            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2025%2F31%2F1807507.jpg"
-          }
-        ]
-      },
-      {
-        "title": "Rental Family",
-        "subtitle": "Themoviedb",
-        "by": [
-          {
-            "username": "incongruousm",
-            "name": "Jason Deabill",
-            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Fmicro.blog%2Fincongruousm%2Favatar.jpg"
-          }
-        ]
-      },
-      {
-        "title": "The Dog Stars",
-        "subtitle": "Themoviedb",
-        "by": [
-          {
-            "username": "incongruousm",
-            "name": "Jason Deabill",
-            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Fmicro.blog%2Fincongruousm%2Favatar.jpg"
+            "username": "thedimpause",
+            "name": "ian",
+            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2026%2F16%2F1318.jpg"
           }
         ]
       },
@@ -100,9 +84,20 @@
         "subtitle": "Themoviedb",
         "by": [
           {
-            "username": "gammalt",
+            "username": "birming",
             "name": "Robert Birming",
-            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Fwww.gravatar.com%2Favatar%2F0d7e65b535e17b3bdc0a3f942da94afe%3Fs%3D96%26d%3Dhttps%253A%252F%252Fmicro.blog%252Fimages%252Fblank_avatar.png"
+            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2026%2F37%2F1944989.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Star Trek: Strange New Worlds , Like Chronitons Through the Hourglass",
+        "subtitle": "Themoviedb",
+        "by": [
+          {
+            "username": "MitchWagner",
+            "name": "Mitch Wagner",
+            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2026%2F26%2F2611.jpg"
           }
         ]
       }
@@ -122,13 +117,68 @@
     ],
     "listening": [
       {
-        "title": "Pops is Tops: The Verve Studio Albums",
-        "subtitle": "Music",
+        "title": "Backwards",
+        "subtitle": "Open",
         "by": [
           {
-            "username": "jacks",
-            "name": "workthecount",
-            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2025%2F30%2F1371694.jpg"
+            "username": "cynthiacliff",
+            "name": "Cynthia Clifford",
+            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2026%2F29%2F1860888.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Same Blood",
+        "subtitle": "Open",
+        "by": [
+          {
+            "username": "cynthiacliff",
+            "name": "Cynthia Clifford",
+            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2026%2F29%2F1860888.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Naked Feet & Holy Fire",
+        "subtitle": "Open",
+        "by": [
+          {
+            "username": "cynthiacliff",
+            "name": "Cynthia Clifford",
+            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2026%2F29%2F1860888.jpg"
+          }
+        ]
+      },
+      {
+        "title": "crank 2 - new slayyyter!",
+        "subtitle": "Open",
+        "by": [
+          {
+            "username": "cynthiacliff",
+            "name": "Cynthia Clifford",
+            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2026%2F29%2F1860888.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Little Lover So Polite - Silversun Pickups",
+        "subtitle": "Open",
+        "by": [
+          {
+            "username": "cynthiacliff",
+            "name": "Cynthia Clifford",
+            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2026%2F29%2F1860888.jpg"
+          }
+        ]
+      },
+      {
+        "title": "My Blue Tears -...",
+        "subtitle": "Open",
+        "by": [
+          {
+            "username": "cynthiacliff",
+            "name": "Cynthia Clifford",
+            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2026%2F29%2F1860888.jpg"
           }
         ]
       },
@@ -151,39 +201,6 @@
             "username": "mroutley",
             "name": "Matt Routley",
             "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2023%2F51%2F5597.jpg"
-          }
-        ]
-      },
-      {
-        "title": "Weapons of Jazz Destruction by Nostalgia77 Octet",
-        "subtitle": "Nostalgia77",
-        "by": [
-          {
-            "username": "rglenny",
-            "name": "Notes to Self",
-            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2024%2F30%2F1354706.jpg"
-          }
-        ]
-      },
-      {
-        "title": "I’m camera",
-        "subtitle": "Album",
-        "by": [
-          {
-            "username": "braindump",
-            "name": "Braindump",
-            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Fthebraindumpblog.com%2Ffavicon.ico"
-          }
-        ]
-      },
-      {
-        "title": "“Sky River”",
-        "subtitle": "Song",
-        "by": [
-          {
-            "username": "mjkaul",
-            "name": "Matt Kaul",
-            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2024%2F21%2F79.jpg"
           }
         ]
       }
