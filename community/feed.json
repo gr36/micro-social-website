@@ -1,8 +1,19 @@
 {
   "version": 1,
-  "updated": "2026-09-28T13:26:28Z",
+  "updated": "2026-10-05T14:09:34Z",
   "activity": {
     "watching": [
+      {
+        "title": "Silo",
+        "subtitle": "Themoviedb",
+        "by": [
+          {
+            "username": "JB75",
+            "name": "J B",
+            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2026%2F39%2F1976098.jpg"
+          }
+        ]
+      },
       {
         "title": "Slow Horses",
         "subtitle": "Themoviedb",
@@ -15,34 +26,51 @@
         ]
       },
       {
-        "title": "Lucky",
+        "title": "Digger",
         "subtitle": "Themoviedb",
         "by": [
+          {
+            "username": "eberle",
+            "name": "Jared Eberle",
+            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2026%2F04%2F84249.jpg"
+          },
           {
             "username": "manton",
             "name": "Manton Reece",
             "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2025%2F22%2F3.jpg"
-          },
-          {
-            "username": "rom",
-            "name": "rom",
-            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2022%2F2006.jpg"
           }
         ]
       },
       {
-        "title": "Silo",
+        "title": "Lanterns",
         "subtitle": "Themoviedb",
         "by": [
           {
-            "username": "starrwulfe",
-            "name": "JL Gatewood",
-            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2023%2F49%2F1294795.jpg"
-          },
+            "username": "Leandro_Maciel",
+            "name": "Leandro Maciel ",
+            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2026%2F11%2F1888474.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Star Trek: Strange New Worlds",
+        "subtitle": "Themoviedb",
+        "by": [
           {
-            "username": "rpmik",
-            "name": "Ryan M. (distortions.net)",
-            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2024%2F46%2F34004.jpg"
+            "username": "mroutley",
+            "name": "Matt Routley",
+            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2023%2F51%2F5597.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Silo , Solo",
+        "subtitle": "Themoviedb",
+        "by": [
+          {
+            "username": "numericcitizen",
+            "name": "Numeric Citizen",
+            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Fmicro.blog%2Fnumericcitizen%2Favatar.jpg"
           }
         ]
       },
@@ -67,67 +95,67 @@
             "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Fmicro.blog%2Fnumericcitizen%2Favatar.jpg"
           }
         ]
-      },
-      {
-        "title": "Loudermilk",
-        "subtitle": "Themoviedb",
-        "by": [
-          {
-            "username": "stijndm",
-            "name": "Stijn De Meyere",
-            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2024%2F41%2F2920.jpg"
-          }
-        ]
-      },
-      {
-        "title": "Reacher",
-        "subtitle": "Themoviedb",
-        "by": [
-          {
-            "username": "stijndm",
-            "name": "Stijn De Meyere",
-            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2024%2F41%2F2920.jpg"
-          }
-        ]
-      },
-      {
-        "title": "Star Trek: Strange New Worlds , Orders of Magnitude",
-        "subtitle": "Themoviedb",
-        "by": [
-          {
-            "username": "KimberlyHirsh",
-            "name": "Kimberly Hirsh",
-            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2022%2F8984.jpg"
-          }
-        ]
       }
     ],
     "playing": [],
     "listening": [
       {
-        "title": "Spotify playlist of the set",
-        "subtitle": "Open",
+        "title": "tgeruis.bandcamp.com/album/slo…",
+        "subtitle": "Tgeruis",
         "by": [
           {
-            "username": "paulmccafferty",
-            "name": "Paul McCafferty",
-            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2026%2F14%2F51598.jpg"
+            "username": "stevenray",
+            "name": "Steven Ray",
+            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2026%2F04%2F1871112.jpg"
           }
         ]
       },
       {
-        "title": "Between Then & Now",
-        "subtitle": "Storyvillerecords",
+        "title": "Groveskopa - Murred",
+        "subtitle": "Mord",
         "by": [
           {
-            "username": "artkavanagh",
-            "name": "Art Kavanagh",
-            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Fmicro.blog%2Fartkavanagh%2Favatar.jpg"
+            "username": "toddgrotenhuis",
+            "name": "Todd Grotenhuis",
+            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Fwww.gravatar.com%2Favatar%2Fe619eb3bfab0f4b11b534236088ed275%3Fs%3D96%26d%3Dhttps%253A%252F%252Fmicro.blog%252Fimages%252Fblank_avatar.png"
           }
         ]
       },
       {
-        "title": "Salesmen, Cheats and Liars",
+        "title": "Kontravoid - Sound of the Void",
+        "subtitle": "Kontravoid",
+        "by": [
+          {
+            "username": "toddgrotenhuis",
+            "name": "Todd Grotenhuis",
+            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Fwww.gravatar.com%2Favatar%2Fe619eb3bfab0f4b11b534236088ed275%3Fs%3D96%26d%3Dhttps%253A%252F%252Fmicro.blog%252Fimages%252Fblank_avatar.png"
+          }
+        ]
+      },
+      {
+        "title": "Ayria - 13 Stitches",
+        "subtitle": "Ayria",
+        "by": [
+          {
+            "username": "toddgrotenhuis",
+            "name": "Todd Grotenhuis",
+            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Fwww.gravatar.com%2Favatar%2Fe619eb3bfab0f4b11b534236088ed275%3Fs%3D96%26d%3Dhttps%253A%252F%252Fmicro.blog%252Fimages%252Fblank_avatar.png"
+          }
+        ]
+      },
+      {
+        "title": "drumcorps - Breakdown",
+        "subtitle": "Drumcorps",
+        "by": [
+          {
+            "username": "toddgrotenhuis",
+            "name": "Todd Grotenhuis",
+            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Fwww.gravatar.com%2Favatar%2Fe619eb3bfab0f4b11b534236088ed275%3Fs%3D96%26d%3Dhttps%253A%252F%252Fmicro.blog%252Fimages%252Fblank_avatar.png"
+          }
+        ]
+      },
+      {
+        "title": "Deer Creek Canyon",
         "subtitle": "Music",
         "by": [
           {
@@ -145,17 +173,6 @@
             "username": "mroutley",
             "name": "Matt Routley",
             "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2023%2F51%2F5597.jpg"
-          }
-        ]
-      },
-      {
-        "title": "So Much To Say",
-        "subtitle": "Album",
-        "by": [
-          {
-            "username": "braindump",
-            "name": "Braindump",
-            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Fthebraindumpblog.com%2Ffavicon.ico"
           }
         ]
       }
