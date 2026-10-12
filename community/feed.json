@@ -1,16 +1,16 @@
 {
   "version": 1,
-  "updated": "2026-10-05T14:09:34Z",
+  "updated": "2026-10-12T14:58:22Z",
   "activity": {
     "watching": [
       {
-        "title": "Silo",
+        "title": "The Big Bang Theory",
         "subtitle": "Themoviedb",
         "by": [
           {
-            "username": "JB75",
-            "name": "J B",
-            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2026%2F39%2F1976098.jpg"
+            "username": "manton",
+            "name": "Manton Reece",
+            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2025%2F22%2F3.jpg"
           }
         ]
       },
@@ -38,6 +38,28 @@
             "username": "manton",
             "name": "Manton Reece",
             "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2025%2F22%2F3.jpg"
+          }
+        ]
+      },
+      {
+        "title": "📺🔗 Lucky",
+        "subtitle": "Themoviedb",
+        "by": [
+          {
+            "username": "JohnPhilpin",
+            "name": "John PHI⑊PIN",
+            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2025%2F50%2F4165.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Dark",
+        "subtitle": "Themoviedb",
+        "by": [
+          {
+            "username": "genegualtieri",
+            "name": "Gene Gualtieri",
+            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2026%2F35%2F8639.jpg"
           }
         ]
       },
@@ -73,68 +95,35 @@
             "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Fmicro.blog%2Fnumericcitizen%2Favatar.jpg"
           }
         ]
-      },
-      {
-        "title": "Dark Matter , The Corridor",
-        "subtitle": "Themoviedb",
-        "by": [
-          {
-            "username": "numericcitizen",
-            "name": "Numeric Citizen",
-            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Fmicro.blog%2Fnumericcitizen%2Favatar.jpg"
-          }
-        ]
-      },
-      {
-        "title": "Dark Matter , The Box",
-        "subtitle": "Themoviedb",
-        "by": [
-          {
-            "username": "numericcitizen",
-            "name": "Numeric Citizen",
-            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Fmicro.blog%2Fnumericcitizen%2Favatar.jpg"
-          }
-        ]
       }
     ],
     "playing": [],
     "listening": [
       {
-        "title": "tgeruis.bandcamp.com/album/slo…",
-        "subtitle": "Tgeruis",
+        "title": "Interplay",
+        "subtitle": "Album",
         "by": [
           {
-            "username": "stevenray",
-            "name": "Steven Ray",
-            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2026%2F04%2F1871112.jpg"
+            "username": "mjkaul",
+            "name": "Matt Kaul",
+            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2024%2F21%2F79.jpg"
           }
         ]
       },
       {
-        "title": "Groveskopa - Murred",
-        "subtitle": "Mord",
+        "title": "to this for hours",
+        "subtitle": "Music",
         "by": [
           {
-            "username": "toddgrotenhuis",
-            "name": "Todd Grotenhuis",
-            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Fwww.gravatar.com%2Favatar%2Fe619eb3bfab0f4b11b534236088ed275%3Fs%3D96%26d%3Dhttps%253A%252F%252Fmicro.blog%252Fimages%252Fblank_avatar.png"
+            "username": "hutaffe",
+            "name": "Manuel Riess",
+            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2026%2F19%2F283.jpg"
           }
         ]
       },
       {
-        "title": "Kontravoid - Sound of the Void",
-        "subtitle": "Kontravoid",
-        "by": [
-          {
-            "username": "toddgrotenhuis",
-            "name": "Todd Grotenhuis",
-            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Fwww.gravatar.com%2Favatar%2Fe619eb3bfab0f4b11b534236088ed275%3Fs%3D96%26d%3Dhttps%253A%252F%252Fmicro.blog%252Fimages%252Fblank_avatar.png"
-          }
-        ]
-      },
-      {
-        "title": "Ayria - 13 Stitches",
-        "subtitle": "Ayria",
+        "title": "Urban Heat!",
+        "subtitle": "Urbanheat",
         "by": [
           {
             "username": "toddgrotenhuis",
@@ -144,18 +133,7 @@
         ]
       },
       {
-        "title": "drumcorps - Breakdown",
-        "subtitle": "Drumcorps",
-        "by": [
-          {
-            "username": "toddgrotenhuis",
-            "name": "Todd Grotenhuis",
-            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Fwww.gravatar.com%2Favatar%2Fe619eb3bfab0f4b11b534236088ed275%3Fs%3D96%26d%3Dhttps%253A%252F%252Fmicro.blog%252Fimages%252Fblank_avatar.png"
-          }
-        ]
-      },
-      {
-        "title": "Deer Creek Canyon",
+        "title": "Don’t Think Twice, It’s All Right",
         "subtitle": "Music",
         "by": [
           {
@@ -173,6 +151,28 @@
             "username": "mroutley",
             "name": "Matt Routley",
             "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2023%2F51%2F5597.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Au Coeur de l’Aube",
+        "subtitle": "Genticorum",
+        "by": [
+          {
+            "username": "writingslowly",
+            "name": "Writing Slowly",
+            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2022%2F4028.jpg"
+          }
+        ]
+      },
+      {
+        "title": "tgeruis.bandcamp.com/album/slo…",
+        "subtitle": "Tgeruis",
+        "by": [
+          {
+            "username": "stevenray",
+            "name": "Steven Ray",
+            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2026%2F04%2F1871112.jpg"
           }
         ]
       }
