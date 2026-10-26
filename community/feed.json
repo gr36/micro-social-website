@@ -1,8 +1,29 @@
 {
   "version": 1,
-  "updated": "2026-10-19T12:42:34Z",
+  "updated": "2026-10-26T12:36:04Z",
   "activity": {
     "watching": [
+      {
+        "title": "Slow Horses",
+        "subtitle": "Themoviedb",
+        "by": [
+          {
+            "username": "therealadam",
+            "name": "Adam Keys",
+            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2024%2F09%2F14828.jpg"
+          },
+          {
+            "username": "stijndm",
+            "name": "Stijn De Meyere",
+            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2024%2F41%2F2920.jpg"
+          },
+          {
+            "username": "rom",
+            "name": "rom",
+            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2022%2F2006.jpg"
+          }
+        ]
+      },
       {
         "title": "The Big Bang Theory",
         "subtitle": "Themoviedb",
@@ -15,13 +36,29 @@
         ]
       },
       {
-        "title": "Slow Horses",
+        "title": "The Diplomat",
         "subtitle": "Themoviedb",
         "by": [
           {
-            "username": "rom",
-            "name": "rom",
-            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2022%2F2006.jpg"
+            "username": "jinscho",
+            "name": "Jeffrey Inscho",
+            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2025%2F35%2F1647185.jpg"
+          },
+          {
+            "username": "dougery",
+            "name": "Doug Gregory",
+            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2026%2F28%2F1934374.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Verity",
+        "subtitle": "Themoviedb",
+        "by": [
+          {
+            "username": "incongruousm",
+            "name": "Jason Deabill",
+            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Fmicro.blog%2Fincongruousm%2Favatar.jpg"
           }
         ]
       },
@@ -38,17 +75,6 @@
             "username": "jatowler",
             "name": "Jerry Towler",
             "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Fmicro.blog%2Fjatowler%2Favatar.jpg"
-          }
-        ]
-      },
-      {
-        "title": "Pressure",
-        "subtitle": "Themoviedb",
-        "by": [
-          {
-            "username": "incongruousm",
-            "name": "Jason Deabill",
-            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Fmicro.blog%2Fincongruousm%2Favatar.jpg"
           }
         ]
       },
@@ -84,23 +110,12 @@
             "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2026%2F11%2F1888474.jpg"
           }
         ]
-      },
-      {
-        "title": "Star Trek: Strange New Worlds",
-        "subtitle": "Themoviedb",
-        "by": [
-          {
-            "username": "mroutley",
-            "name": "Matt Routley",
-            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2023%2F51%2F5597.jpg"
-          }
-        ]
       }
     ],
     "playing": [],
     "listening": [
       {
-        "title": "Interplay",
+        "title": "El arte del bolero, vol. 3",
         "subtitle": "Album",
         "by": [
           {
