@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-02T15:18:07Z",
+  "updated": "2026-11-09T15:45:53Z",
   "activity": {
     "watching": [
       {
@@ -96,18 +96,18 @@
         ]
       },
       {
-        "title": "Backrooms",
+        "title": "Wild Horse Nine",
         "subtitle": "Themoviedb",
         "by": [
           {
-            "username": "mandaris",
-            "name": "Mandaris Moore",
-            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2026%2F06%2F1119.jpg"
+            "username": "cfristrom",
+            "name": "Carl Fristrom",
+            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Fmicro.blog%2Fcfristrom%2Favatar.jpg"
           },
           {
-            "username": "thedimpause",
-            "name": "ian",
-            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2026%2F16%2F1318.jpg"
+            "username": "Cliff538",
+            "name": "Cliff538",
+            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2026%2F38%2F1700855.jpg"
           }
         ]
       }
@@ -115,13 +115,57 @@
     "playing": [],
     "listening": [
       {
-        "title": "embed.music.apple.com/...",
-        "subtitle": "Embed",
+        "title": "Cold",
+        "subtitle": "Music",
+        "by": [
+          {
+            "username": "bounson",
+            "name": "Nik Bounson",
+            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2026%2F26%2F1836604.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Pretty Little Fantasy",
+        "subtitle": "Music",
         "by": [
           {
             "username": "mroutley",
             "name": "Matt Routley",
             "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2023%2F51%2F5597.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Everything Has Changed",
+        "subtitle": "Music",
+        "by": [
+          {
+            "username": "WiredDifferently",
+            "name": "Math You",
+            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2026%2F41%2F97964.jpg"
+          }
+        ]
+      },
+      {
+        "title": "embed.music.apple.com/...",
+        "subtitle": "Embed",
+        "by": [
+          {
+            "username": "JohnPhilpin",
+            "name": "John PHI⑊PIN",
+            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2025%2F50%2F4165.jpg"
+          }
+        ]
+      },
+      {
+        "title": "music.apple.com/us/album/…",
+        "subtitle": "Music",
+        "by": [
+          {
+            "username": "jordon",
+            "name": "Jordon Wadlington",
+            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2022%2F1532.jpg"
           }
         ]
       },
@@ -133,39 +177,6 @@
             "username": "ArnoldHoogerwerf",
             "name": "Arnold Hoogerwerf",
             "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2023%2F02%2F2674.jpg"
-          }
-        ]
-      },
-      {
-        "title": "Peter and the Wolf",
-        "subtitle": "Music",
-        "by": [
-          {
-            "username": "mroutley",
-            "name": "Matt Routley",
-            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2023%2F51%2F5597.jpg"
-          }
-        ]
-      },
-      {
-        "title": "Why Does My Heart Feel So Bad?",
-        "subtitle": "Music",
-        "by": [
-          {
-            "username": "Munish",
-            "name": "Munish ",
-            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2025%2F09%2F22010.jpg"
-          }
-        ]
-      },
-      {
-        "title": "My Moon My Man",
-        "subtitle": "Music",
-        "by": [
-          {
-            "username": "mroutley",
-            "name": "Matt Routley",
-            "avatar": "https://cdn.micro.blog/photos/96/https%3A%2F%2Favatars.micro.blog%2Favatars%2F2023%2F51%2F5597.jpg"
           }
         ]
       },
